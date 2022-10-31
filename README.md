@@ -1,21 +1,13 @@
-# Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
+# ![favicon](https://user-images.githubusercontent.com/90039351/199065349-77f45c99-df2b-4bde-9269-53e0856fee76.png) Eeveelutions
 
 
 ## Jij
 
 ### Ontwerper:
-Sanne 't Hooft (vervangen door jouw naam)
+Sandra Heijnekamp
 
 #### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
+Mijn startniveau is: rood
 
 
 
@@ -26,15 +18,12 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
-
+  <img src="https://user-images.githubusercontent.com/90039351/199065588-35f6cb42-9e50-4a77-ab80-e1b9d84eb421.jpg" width="375px" alt="eerste versie/schets">
+  Het idee is om Eevee in het midden centraal te laten staan met daarom heen een ronddraaiende cirkel met daarop de elementen of stenen (enz.) waarmee Eevee kan elelueren. Aan de rechterkant van het beeldscherm is een in en uitklapbaar gedeelte met extra informatie. 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Het animeren van objecten zoals Eevee zelf
  
 </details>
 
