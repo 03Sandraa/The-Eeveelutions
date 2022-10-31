@@ -19,6 +19,7 @@ Mijn startniveau is: rood
 
   ### De eerste versie/schets:
   <img src="https://user-images.githubusercontent.com/90039351/199065588-35f6cb42-9e50-4a77-ab80-e1b9d84eb421.jpg" width="375px" alt="eerste versie/schets">
+  
   Het idee is om Eevee in het midden centraal te laten staan met daarom heen een ronddraaiende cirkel met daarop de elementen of stenen (enz.) waarmee Eevee kan elelueren. Aan de rechterkant van het beeldscherm is een in en uitklapbaar gedeelte met extra informatie. 
 
   ### Je ambitie: 
