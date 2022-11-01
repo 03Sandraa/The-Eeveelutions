@@ -24,6 +24,7 @@ Mijn startniveau is: rood
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
   - Het animeren van objecten zoals Eevee zelf (SVG's)
+  - Een professioneel eindproduct creëren. 
   
  
 </details>
