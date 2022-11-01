@@ -9,9 +9,13 @@
 
 body {
   margin:0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  background-image: url("../images/Background.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button:not([disabled]) {
@@ -28,6 +32,12 @@ button:not([disabled]) {
 
 :root {
   --color-headings: #603A15;
+
+  --EeveeBaseColor: #BF8D5D;
+  --EeveeBaseShadowColor: #85654B;
+  --EeveeFurColor: #EFDBB7;
+  --EeveeEarEyeColor: #603A15;
+  --EeveeEyeWhite: #ffffff;
 }
 
 
@@ -40,14 +50,134 @@ button:not([disabled]) {
 
 h1 {
   color:var(--color-headings);
+  position: absolute;
+  top: 66vh;
+  color: #ffffff;
 }
 
+section{
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  position: relative;
+  
+}
 
-/* ... */
+section div{
+  position: absolute;
+  width: 100%;
+}
 
-svg{
-  width: 20rem;
-  height: 20rem;
+section img{
+  width: 3rem;
+  display: block;
+  z-index: -1;
+
+  position: absolute;
+  left: 8.5rem;  
+  animation-name: SpinAroundAs;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+section > div > div{
+    animation-name: spinAround;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+section > div > div:nth-of-type(1){
+  filter: drop-shadow(0em 0em 0.5em rgb(61, 147, 4));
+}
+
+section > div > div:nth-of-type(2){
+  animation-delay: 1s;
+  filter: drop-shadow(0em 0em 0.5em rgb(218, 94, 12));
+}
+
+section > div > div:nth-of-type(3){
+  animation-delay: 2s;
+  filter: drop-shadow(0em 0em 0.5em rgb(12, 70, 218));
+}
+
+section > div > div:nth-of-type(4){
+  animation-delay: 3s;
+  filter: drop-shadow(0em 0em 0.5em rgb(18, 129, 48));
+}
+
+section > div > div:nth-of-type(5){
+  animation-delay: 4s;
+  filter: drop-shadow(0em 0em 0.5em rgb(22, 150, 196));
+}
+
+section > div > div:nth-of-type(6){
+  animation-delay: 5s;
+  filter: drop-shadow(0em 0em 0.5em rgb(196, 22, 124));
+}
+
+section > div > div:nth-of-type(7){
+  animation-delay: 6s;
+  filter: drop-shadow(0em 0em 0.5em rgb(196, 22, 124));
+
+}
+
+section > div > div:nth-of-type(8){
+  animation-delay: 7s;
+  filter: drop-shadow(0em 0em 0.5em rgb(196, 22, 124));
+
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg) translate(35vmin);
+  }
+  to {
+    transform: rotate(360deg) translate(35vmin);
+  }
+}
+
+@keyframes SpinAroundAs{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------
+------ Eevee --------
+------------------ */
+
+svg#EeveeContainer{
+  width: 80%;
+  max-width: 20rem;
+  height: 100%;
+  overflow: visible;
+  z-index: 10;
+  filter: drop-shadow(0em 0em 1rem rgba(234, 232, 230, 0.668));
+}
+
+#Eevee .cls-1 {
+  fill: var(--EeveeFurColor);
+}
+
+#Eevee .cls-2 {
+  fill: var(--EeveeEyeWhite);
+}
+
+#Eevee .cls-3 {
+  fill: var(--EeveeBaseShadowColor);
+}
+
+#Eevee .cls-4 {
+  fill: var(--EeveeBaseColor);
+}
+
+#Eevee	.cls-5 {
+  fill: var(--EeveeEarEyeColor);
 }
 
 #Tail{
