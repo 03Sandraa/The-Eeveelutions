@@ -3,23 +3,29 @@
 /*************/
 
 /* naar een idee van Jen Simmons */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin:0;
   display: grid;
   place-items: center;
+  height: 100vh;
+  overflow: hidden;
+
   background-image: url("../images/Background.jpg");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 button:not([disabled]) {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 
@@ -32,12 +38,39 @@ button:not([disabled]) {
 
 :root {
   --color-headings: #603A15;
+  --FontColorH2: rgb(104 144 240);
+  --TransparendBgColor: rgba(255, 255, 255, 0.4);
 
+  /* Element colors */
+  --ElementNormal: rgb(168 168 120);
+  --ElementWater: rgb(104 144 240);
+  --ElementFire: rgb(240 128 48);
+  --ElementElectric: rgb(248 208 48);
+  --ElementGrass: rgb(120 200 80);
+  --ElementIce: rgb(152 216 216);
+  --ElementPsychic: rgb(248 88 136);
+  --ElementDark: rgb(112 88 72);
+  --ElementFairy: rgb(238 153 172);
+  /* Transparent */
+  --ElementNormalTransparent: rgb(168 168 120 / .8);
+  --ElementWaterTransparent: rgb(104 144 240 / .8);
+  --ElementFireTransparent: rgb(240 128 48 / .8);
+  --ElementElectricTransparent: rgb(248 208 48 / .8);
+  --ElementGrassTransparent: rgb(120 200 80 / .8);
+  --ElementIceTransparent: rgb(152 216 216 / .8);
+  --ElementPsychicTransparent: rgb(248 88 136 / .8);
+  --ElementDarkTransparent: rgb(112 88 72 / .8);
+  --ElementFairyTransparent: rgb(238 153 172 / .8);
+
+  --ElementHoverGlow: rgb(232, 238, 227);
+
+  /* Eevee */
   --EeveeBaseColor: #BF8D5D;
   --EeveeBaseShadowColor: #85654B;
   --EeveeFurColor: #EFDBB7;
   --EeveeEarEyeColor: #603A15;
   --EeveeEyeWhite: #ffffff;
+  --EeveeBgGlow: rgba(234, 232, 230, 0.668);
 }
 
 
@@ -49,99 +82,220 @@ button:not([disabled]) {
 /********************/
 
 h1 {
-  color:var(--color-headings);
+  color: var(--color-headings);
   position: absolute;
-  top: 66vh;
+  top: 75vh;
   color: #ffffff;
 }
 
-section{
+/* ------------------
+-- Elementen ring ---
+------------------ */
+
+section:first-of-type {
   display: grid;
   place-items: center;
-  min-height: 100vh;
   position: relative;
-  
 }
 
-section div{
+section:first-of-type div {
   position: absolute;
   width: 100%;
 }
 
-section img{
+section:first-of-type > div:nth-of-type(2) > div > img {
   width: 3rem;
-  display: block;
-  z-index: -1;
 
   position: absolute;
-  left: 8.5rem;  
+  left: 8.5rem;
+  z-index: -1;
+
   animation-name: SpinAroundAs;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-section > div > div{
-    animation-name: spinAround;
-  animation-duration: 8s;
+section:first-of-type > div:nth-of-type(2) > div > img:hover {
+  width: 5rem;
+  transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+section:first-of-type .test{
+  width: 5rem;
+  animation-name: SpinAroundAs;
+  animation-delay: 18s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+
+}
+
+section:first-of-type > div:first-of-type.active-animation{
+  offset-path: path( "m -300 300  Q -100 0 0 0 ");
+
+  animation-name: PokeballDisappear;
+  /* animation-delay: 18s; */
+  animation-duration: 5s;
+  animation-direction: reverse;
+  animation-iteration-count: 1 ;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+section:first-of-type > div:first-of-type{
+  position: absolute;
+  top: 24rem;
+  left: -11.5rem;
+  width: 5rem;
+  
+}
+
+section:first-of-type > div:first-of-type div{
+
+
+  animation-name: PokeballBounce;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 18;
   animation-timing-function: linear;
 }
 
-section > div > div:nth-of-type(1){
-  filter: drop-shadow(0em 0em 0.5em rgb(61, 147, 4));
+@keyframes PokeballBounce {
+  0% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+
+  10% {
+    transform: rotate(10deg) translate(0, 0) scale(1);
+  }
+
+  20% {
+    transform: rotate(-10deg) translate(0, 0) scale(1);
+  }
+
+  30% {
+    transform: rotate(15deg) translate(0, 0) scale(1);
+  }
+
+  40% {
+    transform: rotate(-15deg) translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: rotate(5deg) translate(0, 0) scale(1.1, 0.8);
+  }
+
+  60% {
+    transform: rotate(0deg) translate(0, -3rem) scale(1, 1.1);
+  }
+
+  100% {
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
 }
 
-section > div > div:nth-of-type(2){
-  animation-delay: 1s;
-  filter: drop-shadow(0em 0em 0.5em rgb(218, 94, 12));
+
+@keyframes PokeballDisappear {
+
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
 }
 
-section > div > div:nth-of-type(3){
-  animation-delay: 2s;
-  filter: drop-shadow(0em 0em 0.5em rgb(12, 70, 218));
+
+section:first-of-type > div:nth-of-type(2) > div {
+
+  transform: rotate(0deg) translate(-19rem, 14rem) scale(0.1);
+  animation-name: ElementOutBall, spinAround;
+  animation-duration: 1s, 20s;
+  animation-iteration-count: 1, infinite;
+  animation-timing-function: linear;
 }
 
-section > div > div:nth-of-type(4){
-  animation-delay: 3s;
-  filter: drop-shadow(0em 0em 0.5em rgb(18, 129, 48));
+@keyframes ElementOutBall {
+  0% {
+    transform: rotate(0deg) translate(-19rem, 14rem) scale(0.1);
+  }
+
+  100% {
+    transform: rotate(0deg) translate(-35vmin, 0) scale(1);
+  }
 }
 
-section > div > div:nth-of-type(5){
-  animation-delay: 4s;
-  filter: drop-shadow(0em 0em 0.5em rgb(22, 150, 196));
+section:first-of-type > div:nth-of-type(2) > div:nth-of-type(1) {
+  animation-delay: 0s, 1s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementElectricTransparent));
 }
 
-section > div > div:nth-of-type(6){
-  animation-delay: 5s;
-  filter: drop-shadow(0em 0em 0.5em rgb(196, 22, 124));
+section:first-of-type > div:nth-of-type(2) > div:nth-of-type(2) {
+  animation-delay: 2.5s, 3.5s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementFireTransparent));
 }
 
-section > div > div:nth-of-type(7){
-  animation-delay: 6s;
-  filter: drop-shadow(0em 0em 0.5em rgb(196, 22, 124));
-
+section:first-of-type > div:nth-of-type(2) > div:nth-of-type(3) {
+  animation-delay: 5s, 6s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementWaterTransparent));
 }
 
-section > div > div:nth-of-type(8){
-  animation-delay: 7s;
-  filter: drop-shadow(0em 0em 0.5em rgb(196, 22, 124));
+section:first-of-type > div:nth-of-type(2) > div:nth-of-type(4) {
+  animation-delay: 7.5s, 8.5s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementGrassTransparent));
+}
 
+section:first-of-type > div:nth-of-type(2) > div:nth-of-type(5) {
+  animation-delay: 10s, 11s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementIceTransparent));
+}
+
+section:first-of-type > div:nth-of-type(2) > div:nth-of-type(6) {
+  animation-delay: 12.5s, 13.5s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementDarkTransparent));
+}
+
+section:first-of-type > div:nth-of-type(2) > div:nth-of-type(7) {
+  animation-delay: 15s, 16s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementPsychicTransparent));
+}
+
+section:first-of-type > div:nth-of-type(2) > div:nth-of-type(8) {
+  animation-delay: 17.5s, 18.5s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementFairyTransparent));
+}
+
+section:first-of-type>div:nth-of-type(1):hover,
+section > div:nth-of-type(2) > div:nth-of-type(2):hover,
+section > div:nth-of-type(2) > div:nth-of-type(3):hover,
+section > div:nth-of-type(2) > div:nth-of-type(4):hover,
+section > div:nth-of-type(2) > div:nth-of-type(5):hover,
+section > div:nth-of-type(2) > div:nth-of-type(6):hover,
+section > div:nth-of-type(2) > div:nth-of-type(7):hover,
+section > div:nth-of-type(2) > div:nth-of-type(8):hover {
+  filter: drop-shadow(0em 0em 1em var(--ElementHoverGlow));
 }
 
 @keyframes spinAround {
   from {
-    transform: rotate(0deg) translate(35vmin);
+    transform: rotate(0deg) translate(-35vmin) scale(1);
   }
+
   to {
-    transform: rotate(360deg) translate(35vmin);
+    transform: rotate(360deg) translate(-35vmin) scale(1);
   }
 }
 
-@keyframes SpinAroundAs{
+@keyframes SpinAroundAs {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -151,13 +305,13 @@ section > div > div:nth-of-type(8){
 ------ Eevee --------
 ------------------ */
 
-svg#EeveeContainer{
-  width: 80%;
+svg#EeveeContainer {
+  width: 80vmin;
   max-width: 20rem;
-  height: 100%;
+  margin: auto;
   overflow: visible;
   z-index: 10;
-  filter: drop-shadow(0em 0em 1rem rgba(234, 232, 230, 0.668));
+  filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
 }
 
 #Eevee .cls-1 {
@@ -176,11 +330,11 @@ svg#EeveeContainer{
   fill: var(--EeveeBaseColor);
 }
 
-#Eevee	.cls-5 {
+#Eevee .cls-5 {
   fill: var(--EeveeEarEyeColor);
 }
 
-#Tail{
+#Tail {
   animation-name: EeveeWaveTail;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -188,36 +342,88 @@ svg#EeveeContainer{
   animation-timing-function: linear;
 }
 
-#RightEye, #LeftEye{
+#RightEye,
+#LeftEye {
   animation-name: EeveeBlink;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   transform-origin: 35% 48%;
 }
 
-@keyframes EeveeWaveTail{
-  0%{
+@keyframes EeveeWaveTail {
+  0% {
     transform: rotateZ(0deg);
   }
-  50%{
+
+  50% {
     transform: rotateZ(30deg);
   }
-  100%{
+
+  100% {
     transform: rotateZ(0deg);
   }
 }
 
-@keyframes EeveeBlink{
-  0%{
+@keyframes EeveeBlink {
+  0% {
     transform: scaleY(1);
   }
-  3%{
+
+  3% {
     transform: scaleY(0.1);
   }
-  5%{
+
+  5% {
     transform: scaleY(1);
   }
-  100%{
+
+  100% {
     transform: scaleY(1);
   }
 }
+
+/* ------------------
+---- Informatie -----
+------------------ */
+/* 
+section:nth-of-type(2){
+  position: absolute;
+  background-color: var(--TransparendBgColor);
+  backdrop-filter: blur(25px);
+  padding: 1rem 2rem;
+  right: 0;
+  bottom: 0;
+  top: 20vh;
+  width: 25vw;
+  border-radius: 1rem 0 0 0;
+}
+
+section:nth-of-type(2) h2{
+  position: absolute;
+  bottom: 0;
+  left: -3.23rem;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+
+  padding: 1rem 2rem 0.5rem 2rem;
+  border-radius: 1rem 1rem 0 0;
+
+  color: var(--FontColorH2);
+  background-color: var(--TransparendBgColor);
+  backdrop-filter: blur(25px);
+}
+
+section:nth-of-type(2) > div:first-of-type{
+  padding: 1.5rem;
+  background-color: #ffffff8e;
+  backdrop-filter: blur(25px);
+  width: fit-content;
+  border-radius: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+section:nth-of-type(2) > div:first-of-type img{
+  width: 5rem;
+} */
