@@ -9,15 +9,13 @@ Sandra Heijnekamp
 Mijn startniveau is: rood
 
 
-
-
 # Je plan
 
 <details open>
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
   ### De eerste versie/schets:
-  <img src="https://user-images.githubusercontent.com/90039351/199065588-35f6cb42-9e50-4a77-ab80-e1b9d84eb421.jpg" width="375px" alt="eerste versie/schets">
+  <img src="https://user-images.githubusercontent.com/90039351/199998019-e32c9629-e9ed-4f93-a32c-22470fd375a2.jpg" width="375px" alt="eerste versie/schets">
   
   Het idee is om Eevee in het midden centraal te laten staan met daarom heen een ronddraaiende cirkel met daarop de elementen of stenen (enz.) waarmee Eevee kan elelueren. Aan de rechterkant van het beeldscherm is een in en uitklapbaar gedeelte met extra informatie. 
 
