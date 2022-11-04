@@ -182,14 +182,14 @@ section:first-of-type>div:nth-of-type(2)>div:nth-of-type(8) {
   filter: drop-shadow(0em 0em 0.5em var(--ElementFairyTransparent));
 }
 
-section:first-of-type>div:nth-of-type(1):hover,
-section>div:nth-of-type(2)>div:nth-of-type(2):hover,
-section>div:nth-of-type(2)>div:nth-of-type(3):hover,
-section>div:nth-of-type(2)>div:nth-of-type(4):hover,
-section>div:nth-of-type(2)>div:nth-of-type(5):hover,
-section>div:nth-of-type(2)>div:nth-of-type(6):hover,
-section>div:nth-of-type(2)>div:nth-of-type(7):hover,
-section>div:nth-of-type(2)>div:nth-of-type(8):hover {
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(1):hover,
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(2):hover,
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(3):hover,
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(4):hover,
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(5):hover,
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(6):hover,
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(7):hover,
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(8):hover {
   filter: drop-shadow(0em 0em 1em var(--ElementHoverGlow));
 }
 
