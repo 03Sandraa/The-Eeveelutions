@@ -70,7 +70,10 @@ button:not([disabled]) {
   --EeveeFurColor: #EFDBB7;
   --EeveeEarEyeColor: #603A15;
   --EeveeEyeWhite: #ffffff;
-  --EeveeBgGlow: rgba(234, 232, 230, 0.668);
+  --EeveeOutline: #3d260e;
+  --EeveeBgGlow: rgb(234 232 230 / 0.668);
+
+  --EvolveGlow: rgb(234 232 230 / 1);
 }
 
 
@@ -89,13 +92,14 @@ h1 {
 }
 
 /* ------------------
--- Elementen ring ---
+--- eerste sectie ---
 ------------------ */
 
 section:first-of-type {
   display: grid;
   place-items: center;
   position: relative;
+  margin: 1rem;
 }
 
 section:first-of-type div {
@@ -103,11 +107,26 @@ section:first-of-type div {
   width: 100%;
 }
 
-section:first-of-type > div:nth-of-type(2) > div > img {
-  width: 3rem;
+/* ------------------
+-- Elementen ring ---
+------------------ */
+
+section:first-of-type>div:nth-of-type(2)>div {
+  transform: rotate(0deg) translate(-20vmin, 25vmin) scale(0.1);
+  animation-name: ElementOutBall, spinAround;
+  animation-duration: 1s, 20s;
+  animation-iteration-count: 1, infinite;
+  animation-timing-function: linear;
+}
+section:first-of-type>div:nth-of-type(2):hover > div{
+  animation-play-state: paused;
+}
+
+section:first-of-type>div:nth-of-type(2)>div>img {
+  width: 10vw;
+  max-width: 4rem;
 
   position: absolute;
-  left: 8.5rem;
   z-index: -1;
 
   animation-name: SpinAroundAs;
@@ -117,51 +136,127 @@ section:first-of-type > div:nth-of-type(2) > div > img {
   transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-section:first-of-type > div:nth-of-type(2) > div > img:hover {
-  width: 5rem;
+section:first-of-type>div:nth-of-type(2)>div>img:hover {
+  width: 13vw;
+  max-width: 5rem;
   transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-section:first-of-type .test{
-  width: 5rem;
-  animation-name: SpinAroundAs;
-  animation-delay: 18s;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: reverse;
-
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(1) {
+  animation-delay: 0s, 1s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementElectricTransparent));
 }
 
-section:first-of-type > div:first-of-type.active-animation{
-  offset-path: path( "m -300 300  Q -100 0 0 0 ");
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(2) {
+  animation-delay: 2.5s, 3.5s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementFireTransparent));
+}
+
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(3) {
+  animation-delay: 5s, 6s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementWaterTransparent));
+}
+
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(4) {
+  animation-delay: 7.5s, 8.5s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementGrassTransparent));
+}
+
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(5) {
+  animation-delay: 10s, 11s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementIceTransparent));
+}
+
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(6) {
+  animation-delay: 12.5s, 13.5s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementDarkTransparent));
+}
+
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(7) {
+  animation-delay: 15s, 16s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementPsychicTransparent));
+}
+
+section:first-of-type>div:nth-of-type(2)>div:nth-of-type(8) {
+  animation-delay: 17.5s, 18.5s;
+  filter: drop-shadow(0em 0em 0.5em var(--ElementFairyTransparent));
+}
+
+section:first-of-type>div:nth-of-type(1):hover,
+section>div:nth-of-type(2)>div:nth-of-type(2):hover,
+section>div:nth-of-type(2)>div:nth-of-type(3):hover,
+section>div:nth-of-type(2)>div:nth-of-type(4):hover,
+section>div:nth-of-type(2)>div:nth-of-type(5):hover,
+section>div:nth-of-type(2)>div:nth-of-type(6):hover,
+section>div:nth-of-type(2)>div:nth-of-type(7):hover,
+section>div:nth-of-type(2)>div:nth-of-type(8):hover {
+  filter: drop-shadow(0em 0em 1em var(--ElementHoverGlow));
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg) translate(-25vmin) scale(1);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-25vmin) scale(1);
+  }
+}
+
+@keyframes SpinAroundAs {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ElementOutBall {
+  0% {
+    transform: rotate(0deg) translate(-20vmin, 25vmin) scale(0.1);
+  }
+
+  100% {
+    transform: rotate(0deg) translate(-25vmin, 0) scale(1);
+  }
+}
+
+/* ------------------
+----- Pokeball ------
+------------------ */
+
+section:first-of-type>div:first-of-type {
+  position: absolute;
+  transform: translate(-20vmin, 25vmin);
+  transform-origin: 250% 0%;
+  width: 5rem;
+  z-index: 10;
+
+  /* offset-path: path("M 211.737 35.6271 q -57.5891 -6.8326 -87.3597 33.675"); */
+  offset-path: path("m -455 250  Q -200 0 200 0");
+  /* offset-path: path("m 50 75 Q -50 -25 25 -25"); */
 
   animation-name: PokeballDisappear;
-  /* animation-delay: 18s; */
-  animation-duration: 5s;
+  animation-delay: 18s;
+  animation-duration: 2s;
   animation-direction: reverse;
-  animation-iteration-count: 1 ;
+  animation-iteration-count: 1;
   animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-section:first-of-type > div:first-of-type{
-  position: absolute;
-  top: 24rem;
-  left: -11.5rem;
-  width: 5rem;
+  animation-fill-mode: both;
   
 }
 
-section:first-of-type > div:first-of-type div{
+section:first-of-type div:first-of-type img {
+  width: 5rem;
+  animation-name: PokeballBounce, SpinAroundAs;
+  animation-delay: 0s, 18s;
+  animation-duration: 1s, 1s;
+  animation-iteration-count: 18, infinite;
+  animation-timing-function: linear, linear;
+  animation-direction: normal, reverse;
 
-
-  animation-name: PokeballBounce;
-  animation-delay: 0s;
-  animation-duration: 1s;
-  animation-direction: normal;
-  animation-iteration-count: 18;
-  animation-timing-function: linear;
 }
 
 @keyframes PokeballBounce {
@@ -211,107 +306,18 @@ section:first-of-type > div:first-of-type div{
 }
 
 
-section:first-of-type > div:nth-of-type(2) > div {
-
-  transform: rotate(0deg) translate(-19rem, 14rem) scale(0.1);
-  animation-name: ElementOutBall, spinAround;
-  animation-duration: 1s, 20s;
-  animation-iteration-count: 1, infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes ElementOutBall {
-  0% {
-    transform: rotate(0deg) translate(-19rem, 14rem) scale(0.1);
-  }
-
-  100% {
-    transform: rotate(0deg) translate(-35vmin, 0) scale(1);
-  }
-}
-
-section:first-of-type > div:nth-of-type(2) > div:nth-of-type(1) {
-  animation-delay: 0s, 1s;
-  filter: drop-shadow(0em 0em 0.5em var(--ElementElectricTransparent));
-}
-
-section:first-of-type > div:nth-of-type(2) > div:nth-of-type(2) {
-  animation-delay: 2.5s, 3.5s;
-  filter: drop-shadow(0em 0em 0.5em var(--ElementFireTransparent));
-}
-
-section:first-of-type > div:nth-of-type(2) > div:nth-of-type(3) {
-  animation-delay: 5s, 6s;
-  filter: drop-shadow(0em 0em 0.5em var(--ElementWaterTransparent));
-}
-
-section:first-of-type > div:nth-of-type(2) > div:nth-of-type(4) {
-  animation-delay: 7.5s, 8.5s;
-  filter: drop-shadow(0em 0em 0.5em var(--ElementGrassTransparent));
-}
-
-section:first-of-type > div:nth-of-type(2) > div:nth-of-type(5) {
-  animation-delay: 10s, 11s;
-  filter: drop-shadow(0em 0em 0.5em var(--ElementIceTransparent));
-}
-
-section:first-of-type > div:nth-of-type(2) > div:nth-of-type(6) {
-  animation-delay: 12.5s, 13.5s;
-  filter: drop-shadow(0em 0em 0.5em var(--ElementDarkTransparent));
-}
-
-section:first-of-type > div:nth-of-type(2) > div:nth-of-type(7) {
-  animation-delay: 15s, 16s;
-  filter: drop-shadow(0em 0em 0.5em var(--ElementPsychicTransparent));
-}
-
-section:first-of-type > div:nth-of-type(2) > div:nth-of-type(8) {
-  animation-delay: 17.5s, 18.5s;
-  filter: drop-shadow(0em 0em 0.5em var(--ElementFairyTransparent));
-}
-
-section:first-of-type>div:nth-of-type(1):hover,
-section > div:nth-of-type(2) > div:nth-of-type(2):hover,
-section > div:nth-of-type(2) > div:nth-of-type(3):hover,
-section > div:nth-of-type(2) > div:nth-of-type(4):hover,
-section > div:nth-of-type(2) > div:nth-of-type(5):hover,
-section > div:nth-of-type(2) > div:nth-of-type(6):hover,
-section > div:nth-of-type(2) > div:nth-of-type(7):hover,
-section > div:nth-of-type(2) > div:nth-of-type(8):hover {
-  filter: drop-shadow(0em 0em 1em var(--ElementHoverGlow));
-}
-
-@keyframes spinAround {
-  from {
-    transform: rotate(0deg) translate(-35vmin) scale(1);
-  }
-
-  to {
-    transform: rotate(360deg) translate(-35vmin) scale(1);
-  }
-}
-
-@keyframes SpinAroundAs {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* ------------------
 ------ Eevee --------
 ------------------ */
 
 svg#EeveeContainer {
-  width: 80vmin;
+  width: 40vw;
   max-width: 20rem;
   margin: auto;
   overflow: visible;
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
+  fill: var(--EeveeOutline);
 }
 
 #Eevee .cls-1 {
@@ -382,48 +388,140 @@ svg#EeveeContainer {
   }
 }
 
+
+/* ------------------
+---- Evolve -----
+------------------ */
+
+section.Evolve svg#EeveeContainer {
+  animation-name: EvolveColor, EvolveMovementPokemon, EvolveSpin;
+  animation-duration: 1s, 2s, 0.5s;
+  animation-delay: 0s, 0s, 2s;
+  animation-iteration-count: 1, 1, infinite;
+  animation-timing-function: linear, linear, linear;
+  animation-fill-mode: forwards, none, none;
+}
+
+section.Evolve::after, section.Evolve::before{
+  position: absolute;
+  content: "";
+  width: 5vw;
+  height: 5vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  z-index: 20;
+
+  animation-name: EvolveSpinBefore, EvolveZoom;
+  animation-delay: 2s, 5s;
+  animation-duration: 1s, 5s;
+  animation-iteration-count: infinite, 1;
+  animation-timing-function: linear, linear;
+}
+
+section.Evolve::before {
+  animation-delay: 2.1s, 5s;
+}
+
+@keyframes EvolveSpinBefore {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-color: #ffffff;
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+    background-color: #ffffff;
+  }
+}
+@keyframes EvolveZoom{
+  0%{
+    width: 5vw;
+    height: 5vw;
+  }
+  100%{
+    width: 120vw;
+    height: 120vw;
+  }
+}
+
+section.Evolve #Eevee .cls-1,
+section.Evolve #Eevee .cls-2,
+section.Evolve #Eevee .cls-3,
+section.Evolve #Eevee .cls-4,
+section.Evolve #Eevee .cls-5 {
+  animation-name: EvolveColor;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes EvolveColor {
+  0% {
+    fill: inherit;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+@keyframes EvolveMovementPokemon {
+  0% {
+    transform: scale(1) rotate(0);
+    filter: drop-shadow(0em 0em 1rem var(--EvolveGlow));
+  }
+  10% {
+    transform: scale(0.6, 0.8) rotate(0);
+    filter: drop-shadow(0em 0em 1.5rem var(--EvolveGlow));
+  }
+  20% {
+    transform: scale(0.9, 1) rotate(0);
+    filter: drop-shadow(0em 0em 1rem var(--EvolveGlow));
+  }
+  30% {
+    transform: scale(0.4, 1) rotate(0);
+    filter: drop-shadow(0em 0em 5rem var(--EvolveGlow));
+  }
+  40% {
+    transform: scale(1, 1.3) rotate(0);
+    filter: drop-shadow(0em 0em 2rem var(--EvolveGlow));
+  }
+  50% {
+    transform: scale(0.5, 1.5) rotate(0);
+    filter: drop-shadow(0em 0em 8rem var(--EvolveGlow));
+  }
+  60% {
+    transform: scale(0.8, .5) rotate(360deg);
+    filter: drop-shadow(0em 0em 3rem var(--EvolveGlow));
+  }
+  70% {
+    transform: scale(0.3, .7) rotate(0deg);
+    filter: drop-shadow(0em 0em 3rem var(--EvolveGlow));
+  }
+  80% {
+    transform: scale(0.5, .4) rotate(-360deg);
+    filter: drop-shadow(0em 0em 3rem var(--EvolveGlow));
+  }
+  100% {
+    transform: scale(.2) rotate(0);
+    filter: drop-shadow(0em 0em 1rem var(--EvolveGlow));
+  }
+}
+
+@keyframes EvolveSpin {
+  from {
+    transform: scale(.2) rotate(0deg);
+  }
+
+  to {
+    transform: scale(.2) rotate(360deg);
+  }
+}
+
+
 /* ------------------
 ---- Informatie -----
 ------------------ */
-/* 
-section:nth-of-type(2){
-  position: absolute;
-  background-color: var(--TransparendBgColor);
-  backdrop-filter: blur(25px);
-  padding: 1rem 2rem;
-  right: 0;
-  bottom: 0;
-  top: 20vh;
-  width: 25vw;
-  border-radius: 1rem 0 0 0;
-}
-
-section:nth-of-type(2) h2{
-  position: absolute;
-  bottom: 0;
-  left: -3.23rem;
-  transform: rotate(-90deg);
-  transform-origin: 0% 0%;
-
-  padding: 1rem 2rem 0.5rem 2rem;
-  border-radius: 1rem 1rem 0 0;
-
-  color: var(--FontColorH2);
-  background-color: var(--TransparendBgColor);
-  backdrop-filter: blur(25px);
-}
-
-section:nth-of-type(2) > div:first-of-type{
-  padding: 1.5rem;
-  background-color: #ffffff8e;
-  backdrop-filter: blur(25px);
-  width: fit-content;
-  border-radius: 100%;
-
-  display: grid;
-  place-items: center;
-}
-
-section:nth-of-type(2) > div:first-of-type img{
-  width: 5rem;
-} */

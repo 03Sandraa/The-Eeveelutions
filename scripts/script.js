@@ -1,8 +1,9 @@
 // JavaScript Document
-const test = document.querySelector('.test2');
 
-test.addEventListener("click",functie);
+// const test = document.querySelector('.test2');
 
-function functie(){
-    test.classList.add('active-animation');
-}
+// test.addEventListener("click",functie);
+
+// function functie(){
+//     test.classList.add('active-animation');
+// }
