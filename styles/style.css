@@ -230,6 +230,30 @@ button:not([disabled]) {
   --GlaceonShinyDarkBlueColor: #32656d;
   --GlaceonShinyEyeWhite: #ffffff;
   --GlaceonShinyOutline: #000000;
+
+
+  /* Sylveon */
+  --SylveonBaseColor: #f8f9fb;
+  --SylveonBaseShadowColor: #ecced1;
+  --SylveonPinkLightDetailColor: #f2aeb8;
+  --SylveonPinkDarkDetailColor: #ee9bad;
+  --SylveonBlueLightDetailColor: #88ceef;
+  --SylveonBlueDarkDetailColor: #6d98cc;
+  --SylveonEyeWhite: #ffffff;
+  --SylveonOutline: #000000;
+
+  /* Shiny Sylveon */
+  --SylveonShinyBaseColor: #f8f9fb;
+  --SylveonShinyBaseShadowColor: #A0CFE8;
+  --SylveonShinyPinkLightDetailColor: #80BDE7;
+  --SylveonShinyPinkDarkDetailColor: #80BDE7;
+  --SylveonShinyBlueLightDetailColor: #D28DBD;
+  --SylveonShinyBlueDarkDetailColor: #CA5882;
+  --SylveonShinyEyeWhite: #ffffff;
+  --SylveonShinyOutline: #000000;
+
+  /* Shiny Sylveon */
+
 }
 
 
@@ -1116,6 +1140,82 @@ svg#GlaceonContainer {
 
 
 /* ------------------
+------ Sylveon ------
+------------------ */
+
+.Sylveon svg#SylveonContainer {
+  display: block;
+}
+
+svg#SylveonContainer {
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+  z-index: 10;
+  filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
+  fill: var(--SylveonOutline);
+  display: none;
+}
+
+#Sylveon .cls-1 {
+  fill: var(--SylveonEyeWhite);
+}
+
+#Sylveon .cls-2, #Sylveon .cls-5 {
+  fill: var(--SylveonBaseColor);
+}
+
+#Sylveon .cls-3 {
+  fill: var(--SylveonBaseShadowColor);
+}
+
+#Sylveon .cls-4 {
+  fill: var(--SylveonPinkLightDetailColor);
+}
+
+#Sylveon .cls-6 {
+  fill: var(--SylveonPinkDarkDetailColor);
+}
+
+#Sylveon .cls-7, #Sylveon .cls-9 {
+  fill: var(--SylveonBlueDarkDetailColor);
+}
+#Sylveon .cls-10{
+  fill: var(--SylveonBlueLightDetailColor);
+}
+
+/* Shiny */
+
+.Shiny svg#SylveonContainer #Sylveon {
+  fill: var(--SylveonShinyOutline);
+}
+
+.Shiny #Sylveon .cls-2, .Shiny #Sylveon .cls-5 {
+  fill: var(--SylveonShinyBaseColor);
+}
+
+.Shiny #Sylveon .cls-3 {
+  fill: var(--SylveonShinyBaseShadowColor);
+}
+
+.Shiny #Sylveon .cls-4 {
+  fill: var(--SylveonShinyPinkLightDetailColor);
+}
+
+.Shiny #Sylveon .cls-6 {
+  fill: var(--SylveonShinyPinkDarkDetailColor);
+}
+
+.Shiny #Sylveon .cls-7, .Shiny #Sylveon .cls-9 {
+  fill: var(--SylveonShinyBlueDarkDetailColor);
+}
+
+.Shiny #Sylveon .cls-10 {
+  fill: var(--SylveonShinyBlueLightDetailColor);
+}
+
+
+/* ------------------
 ---- Evolve -----
 ------------------ */
 
@@ -1303,12 +1403,12 @@ header ul li:nth-of-type(4), header ul li:nth-of-type(4) button{
   border-radius: 50rem 0 0 0;
 }
 
-header ul li:first-of-type button svg, header ul li:nth-of-type(2) button svg, header ul li:nth-of-type(3) button svg, header ul li:nth-of-type(4) button svg, header ul li:nth-of-type(5) button svg{
+header ul li:first-of-type button svg, header ul li:nth-of-type(2) button svg, header ul li:nth-of-type(3) button svg, header ul li:nth-of-type(4) button svg, header ul li:nth-of-type(5) button svg, header ul li:nth-of-type(6) button svg{
   max-width: 4rem;
   fill: #ffffff62;
 }
 
-header ul li:first-of-type button:hover svg, header ul li:nth-of-type(2) button:hover svg, header ul li:nth-of-type(3) button:hover svg, header ul li:nth-of-type(4) button:hover svg, header ul li:nth-of-type(5) button:hover svg{
+header ul li:first-of-type button:hover svg, header ul li:nth-of-type(2) button:hover svg, header ul li:nth-of-type(3) button:hover svg, header ul li:nth-of-type(4) button:hover svg, header ul li:nth-of-type(5) button:hover svg, header ul li:nth-of-type(6) button:hover svg{
   max-width: 4.5rem;
   fill: #ffffff;
 }
@@ -1351,10 +1451,15 @@ header ul li:nth-of-type(4):hover{
 
 header ul li:nth-of-type(5){
   top: 45%;
+  right: 0%;
+}
+
+header ul li:nth-of-type(6){
+  top: 45%;
   left: 0%;
 }
 
-header ul li:nth-of-type(5) button{
+header ul li:nth-of-type(5) button, header ul li:nth-of-type(6) button{
   width: 5rem;
   height: 5rem;
   margin: 2rem;
@@ -1365,7 +1470,7 @@ header ul li:nth-of-type(5) button{
   padding: .8rem;
 }
 
-header ul li:nth-of-type(5) button:hover{
+header ul li:nth-of-type(5) button:hover, header ul li:nth-of-type(6) button:hover{
   border: none;
   background-color: var(--TransparendHoverBgColor);
 }

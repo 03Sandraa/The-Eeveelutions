@@ -134,3 +134,9 @@ ButtonShiny.addEventListener("click", () => {
     const ContainerPokemon = document.querySelector("section:first-of-type>figure:nth-of-type(2)");
     ContainerPokemon.classList.toggle("Shiny");
 });
+
+const ButtonReset = document.querySelector("header ul li:nth-of-type(6) button");
+
+ButtonReset.addEventListener("click", () => {
+    window.location.reload();
+});
