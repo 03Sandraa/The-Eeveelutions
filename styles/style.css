@@ -24,6 +24,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body.Dark {
+  background-image: url("../images/DarkBackground.jpg");
+}
+
+body.Sunny {
+  background-image: url("../images/SunnyBackground.jpg");
+}
+
+body.Grass {
+  background-image: url("../images/ForestBackground.jpg");
+}
+
+body.Ice {
+  background-image: url("../images/SnowyBackground.jpg");
+}
+
+
 button:not([disabled]) {
   cursor: pointer;
 }
@@ -39,7 +56,13 @@ button:not([disabled]) {
 :root {
   --color-headings: #603A15;
   --FontColorH2: rgb(104 144 240);
-  --TransparendBgColor: rgba(255, 255, 255, 0.4);
+  --TransparendBgColor: rgba(255, 255, 255, 0.1);
+  --TransparendHoverBgColor: rgba(255, 255, 255, 0.3);
+  --BgSunnyColor: rgba(255, 170, 0, 0.4);
+  --BgDarkColor: rgb(112 88 72 / 0.4);
+  --BgGrassyColor: rgb(120 200 80 / 0.4);
+  --BgIcyColor: rgb(152 216 216 / 0.4);
+
 
   /* Element colors */
   --ElementNormal: rgb(168 168 120);
@@ -71,9 +94,142 @@ button:not([disabled]) {
   --EeveeEarEyeColor: #603A15;
   --EeveeEyeWhite: #ffffff;
   --EeveeOutline: #3d260e;
+
+  /* Shiny Eevee*/
+
+  --EeveeShinyBaseColor: #DBD4BC;
+  --EeveeShinyBaseShadowColor: #A49F92;
+  --EeveeShinyFurColor: #E3E3E3;
+  --EeveeShinyEarEyeColor: #5F5849;
+  --EeveeShinyOutline: #2B2A28;
+
   --EeveeBgGlow: rgb(234 232 230 / 0.668);
 
   --EvolveGlow: rgb(234 232 230 / 1);
+
+  /* Jolteon */
+  --JolteonBaseColor: #fbd56f;
+  --JolteonBaseShadowColor: #d8b55f;
+  --JolteonFurColor: #dee3e7;
+  --JolteonEarEyeColor: #36164f;
+  --JolteonEyeWhite: #ffffff;
+  --JolteonOutline: #3d330e;
+
+  /* Shiny Jolteon */
+  --JolteonShinyBaseColor: #D4F56B;
+  --JolteonShinyBaseShadowColor: #B4D05A;
+  --JolteonShinyFurColor: #dee3e7;
+  --JolteonShinyEarEyeColor: #36154F;
+  --JolteonShinyEyeWhite: #ffffff;
+  --JolteonShinyOutline: #203d0e;
+
+  /* Vaporeon */
+  --VaporeonBaseColor: #88c5dc;
+  --VaporeonBaseShadowColor: #80b4c3;
+  --VaporeonFurColor: #e3eaf3;
+  --VaporeonEarColor: #e6e5c6;
+  --VaporeonEyeColor: #513e6f;
+  --VaporeonEyeWhite: #ffffff;
+  --VaporeonBackFin: #3e6175;
+  --VaporeonMouth: #85667d;
+  --VaporeonTongue: #ceb1ca;
+  --VaporeonOutline: #3e6175;
+
+  /* Shiny Vaporeon */
+  --VaporeonShinyBaseColor: #CB7EAF;
+  --VaporeonShinyBaseShadowColor: #BB67A9;
+  --VaporeonShinyFurColor: #F8E1ED;
+  --VaporeonShinyEarColor: #e6e5c6;
+  --VaporeonShinyEyeColor: #513e6f;
+  --VaporeonShinyBackFin: #A54392;
+  --VaporeonShinyMouth: #93647F;
+  --VaporeonShinyTongue: #D6B0CD;
+  --VaporeonShinyOutline: #4a0b3e;
+
+  /* Flareon */
+  --FlareonBaseColor: #e87e4b;
+  --FlareonBaseShadowColor: #c56a3e;
+  --FlareonFurColor: #f7eaa0;
+  --FlareonEarEyeColor: #002c3a;
+  --FlareonEyeWhite: #ffffff;
+  --FlareonTongue: #caa0b4;
+  --FlareonOutline: #000000;
+
+  /* Shiny Flareon */
+  --FlareonShinyBaseColor: #E2A948;
+  --FlareonShinyBaseShadowColor: #BA7B30;
+  --FlareonShinyFurColor: #FBF6A8;
+  --FlareonShinyEarEyeColor: #152E54;
+  --FlareonShinyTongue: #caa0b4;
+  --FlareonShinyOutline: #000000;
+
+  /* Espeon */
+  --EspeonBaseColor: #d6bacc;
+  --EspeonBaseShadowColor: #887181;
+  --EspeonDotColor: #9d3348;
+  --EspeonEyeColor: #5b4a7a;
+  --EspeonEarColor: #494f5d;
+  --EspeonEyeWhite: #ffffff;
+  --EspeonOutline: #231f20;
+
+  /* Shiny Espeon */
+  --EspeonShinyBaseColor: #ABD255;
+  --EspeonShinyBaseShadowColor: #77C143;
+  --EspeonShinyDotColor: #C15B29;
+  --EspeonShinyEyeColor: #6D4DA0;
+  --EspeonShinyEarColor: #48566A;
+  --EspeonShinyEyeWhite: #ffffff;
+  --EspeonShinyOutline: #231f20;
+
+  /* Umbreon */
+  --UmbreonBaseColor: #484d52;
+  --UmbreonBaseShadowColor: #34383a;
+  --UmbreonRingColor: #e4ca85;
+  --UmbreonEyeColor: #d16b4a;
+  --UmbreonEyeWhite: #ffffff;
+  --UmbreonOutline: #000000;
+
+  /* Shiny Umbreon */
+  --UmbreonShinyBaseColor: #3A474A;
+  --UmbreonShinyBaseShadowColor: #293235;
+  --UmbreonShinyRingColor: #7ED3ED;
+  --UmbreonShinyEyeColor: #ECB91E;
+  --UmbreonShinyEyeWhite: #ffffff;
+  --UmbreonShinyOutline: #000000;
+
+  /* Leafeon */
+  --LeafeonBaseColor: #f4e0a9;
+  --LeafeonBaseBrownColor: #916434;
+  --LeafeonBaseBrownShadowColor: #8C5F32;
+  --LeafeonLeafColor: #a5ab87;
+  --LeafeonLeafEndColor: #87c8a3;
+  --LeafeonEyeWhite: #ffffff;
+  --LeafeonOutline: #000000;
+
+  /* Shiny Leafeon */
+  --LeafeonShinyBaseColor: #EBD398;
+  --LeafeonShinyBaseBrownColor: #99702D;
+  --LeafeonShinyBaseBrownShadowColor: #7D5D2B;
+  --LeafeonShinyLeafColor: #B1D0A2;
+  --LeafeonShinyLeafEndColor: #77C488;
+  --LeafeonShinyEyeWhite: #ffffff;
+  --LeafeonShinyOutline: #000000;
+
+  /* Glaceon */
+  --GlaceonBaseColor: #b6e1de;
+  --GlaceonBaseShadowColor: #95b3af;
+  --GlaceonSecondairBlueColor: #51afc5;
+  --GlaceonDarkBlueColor: #32656d;
+  --GlaceonEyeWhite: #ffffff;
+  --GlaceonOutline: #000000;
+
+  /* Shiny Glaceon */
+  --GlaceonShinyBaseColor: #b6e1de;
+  --GlaceonShinyBaseShadowColor: #95b3af;
+  --GlaceonShinySecondairBlueColor: #51afc5;
+  --GlaceonShinyDarkBlueColor: #32656d;
+  --GlaceonShinyEyeWhite: #ffffff;
+  --GlaceonShinyOutline: #000000;
 }
 
 
@@ -84,10 +240,13 @@ button:not([disabled]) {
 /* ALGEMENE STYLING */
 /********************/
 
+
 h1 {
-  color: var(--color-headings);
   position: absolute;
-  top: 75vh;
+  bottom: -7vh;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
   color: #ffffff;
 }
 
@@ -102,27 +261,33 @@ section:first-of-type {
   margin: 1rem;
 }
 
-section:first-of-type div {
-  position: absolute;
-  width: 100%;
-}
-
 /* ------------------
 -- Elementen ring ---
 ------------------ */
 
-section:first-of-type>div:nth-of-type(2)>div {
+section:first-of-type ul {
+  position: absolute;
+  width: 100%;
+}
+
+section:first-of-type.Evolve ul {
+  display: none;
+}
+
+section:first-of-type>ul:nth-of-type(1)>li {
   transform: rotate(0deg) translate(-20vmin, 25vmin) scale(0.1);
   animation-name: ElementOutBall, spinAround;
   animation-duration: 1s, 20s;
   animation-iteration-count: 1, infinite;
   animation-timing-function: linear;
+  list-style: none;
 }
-section:first-of-type>div:nth-of-type(2):hover > div{
+
+section:first-of-type>ul:nth-of-type(1):hover>li {
   animation-play-state: paused;
 }
 
-section:first-of-type>div:nth-of-type(2)>div>img {
+section:first-of-type>ul:nth-of-type(1)>li>img {
   width: 10vw;
   max-width: 4rem;
 
@@ -136,60 +301,60 @@ section:first-of-type>div:nth-of-type(2)>div>img {
   transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-section:first-of-type>div:nth-of-type(2)>div>img:hover {
+section:first-of-type>ul:nth-of-type(1)>li>img:hover {
   width: 13vw;
   max-width: 5rem;
   transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(1) {
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(1) {
   animation-delay: 0s, 1s;
   filter: drop-shadow(0em 0em 0.5em var(--ElementElectricTransparent));
 }
 
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(2) {
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(2) {
   animation-delay: 2.5s, 3.5s;
   filter: drop-shadow(0em 0em 0.5em var(--ElementFireTransparent));
 }
 
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(3) {
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(3) {
   animation-delay: 5s, 6s;
   filter: drop-shadow(0em 0em 0.5em var(--ElementWaterTransparent));
 }
 
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(4) {
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(4) {
   animation-delay: 7.5s, 8.5s;
   filter: drop-shadow(0em 0em 0.5em var(--ElementGrassTransparent));
 }
 
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(5) {
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(5) {
   animation-delay: 10s, 11s;
   filter: drop-shadow(0em 0em 0.5em var(--ElementIceTransparent));
 }
 
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(6) {
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(6) {
   animation-delay: 12.5s, 13.5s;
   filter: drop-shadow(0em 0em 0.5em var(--ElementDarkTransparent));
 }
 
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(7) {
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(7) {
   animation-delay: 15s, 16s;
   filter: drop-shadow(0em 0em 0.5em var(--ElementPsychicTransparent));
 }
 
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(8) {
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(8) {
   animation-delay: 17.5s, 18.5s;
   filter: drop-shadow(0em 0em 0.5em var(--ElementFairyTransparent));
 }
 
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(1):hover,
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(2):hover,
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(3):hover,
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(4):hover,
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(5):hover,
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(6):hover,
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(7):hover,
-section:first-of-type>div:nth-of-type(2)>div:nth-of-type(8):hover {
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(1):hover,
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(2):hover,
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(3):hover,
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(4):hover,
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(5):hover,
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(6):hover,
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(7):hover,
+section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(8):hover {
   filter: drop-shadow(0em 0em 1em var(--ElementHoverGlow));
 }
 
@@ -227,7 +392,7 @@ section:first-of-type>div:nth-of-type(2)>div:nth-of-type(8):hover {
 ----- Pokeball ------
 ------------------ */
 
-section:first-of-type>div:first-of-type {
+section:first-of-type>figure:first-of-type {
   position: absolute;
   transform: translate(-20vmin, 25vmin);
   transform-origin: 250% 0%;
@@ -245,10 +410,14 @@ section:first-of-type>div:first-of-type {
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: both;
-  
+
 }
 
-section:first-of-type div:first-of-type img {
+section:first-of-type.Evolve>figure:first-of-type {
+  display: none;
+}
+
+section:first-of-type figure:first-of-type img {
   width: 5rem;
   animation-name: PokeballBounce, SpinAroundAs;
   animation-delay: 0s, 18s;
@@ -310,14 +479,30 @@ section:first-of-type div:first-of-type img {
 ------ Eevee --------
 ------------------ */
 
-svg#EeveeContainer {
+figure:nth-of-type(2) {
   width: 40vw;
   max-width: 20rem;
+  aspect-ratio: 1 / 1;
+}
+
+svg#EeveeContainer {
+  width: 100%;
   margin: auto;
   overflow: visible;
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
   fill: var(--EeveeOutline);
+}
+
+.Jolteon svg#EeveeContainer,
+.Vaporeon svg#EeveeContainer,
+.Flareon svg#EeveeContainer,
+.Leafeon svg#EeveeContainer,
+.Glaceon svg#EeveeContainer,
+.Espeon svg#EeveeContainer,
+.Umbreon svg#EeveeContainer,
+.Sylveon svg#EeveeContainer {
+  display: none;
 }
 
 #Eevee .cls-1 {
@@ -338,6 +523,28 @@ svg#EeveeContainer {
 
 #Eevee .cls-5 {
   fill: var(--EeveeEarEyeColor);
+}
+
+/* Shiny */
+
+svg#EeveeContainer #Eevee {
+  fill: var(--EeveeShinyOutline);
+}
+
+.Shiny #Eevee .cls-1 {
+  fill: var(--EeveeShinyFurColor);
+}
+
+.Shiny #Eevee .cls-3 {
+  fill: var(--EeveeShinyBaseShadowColor);
+}
+
+.Shiny #Eevee .cls-4 {
+  fill: var(--EeveeShinyBaseColor);
+}
+
+.Shiny #Eevee .cls-5 {
+  fill: var(--EeveeShinyEarEyeColor);
 }
 
 #Tail {
@@ -389,6 +596,525 @@ svg#EeveeContainer {
 }
 
 
+
+/* ------------------
+------ Jolteon --------
+------------------ */
+
+.Jolteon svg#JolteonContainer {
+  display: block;
+}
+
+svg#JolteonContainer {
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+  z-index: 10;
+  filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
+  fill: var(--JolteonOutline);
+  display: none;
+}
+
+#Jolteon .cls-1 {
+  fill: var(--JolteonBaseColor);
+}
+
+#Jolteon .cls-2 {
+  fill: var(--JolteonEyeWhite);
+}
+
+#Jolteon .cls-3 {
+  fill: var(--JolteonBaseShadowColor);
+}
+
+#Jolteon .cls-4 {
+  fill: var(--JolteonFurColor);
+}
+
+#Jolteon .cls-5 {
+  fill: var(--JolteonEarEyeColor);
+}
+
+/* Shiny */
+
+.Shiny svg#JolteonContainer #Jolteon {
+  fill: var(--JolteonShinyOutline);
+}
+
+.Shiny #Jolteon .cls-1 {
+  fill: var(--JolteonShinyBaseColor);
+}
+
+.Shiny #Jolteon .cls-3 {
+  fill: var(--JolteonShinyBaseShadowColor);
+}
+
+.Shiny #Jolteon .cls-4 {
+  fill: var(--JolteonShinyFurColor);
+}
+
+.Shiny #Jolteon .cls-5 {
+  fill: var(--JolteonShinyEarEyeColor);
+}
+
+
+
+
+/* ------------------
+----- Vaporeon ------
+------------------ */
+
+.Vaporeon svg#VaporeonContainer {
+  display: block;
+}
+
+svg#VaporeonContainer {
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+  z-index: 10;
+  filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
+  fill: var(--VaporeonOutline);
+  display: none;
+}
+
+#Vaporeon .cls-1 {
+  fill: var(--VaporeonEarColor);
+}
+
+#Vaporeon .cls-2 {
+  fill: var(--VaporeonFurColor);
+}
+
+#Vaporeon .cls-3 {
+  fill: var(--VaporeonEyeWhite);
+}
+
+#Vaporeon .cls-4 {
+  fill: var(--VaporeonBaseShadowColor);
+}
+
+#Vaporeon .cls-5 {
+  fill: var(--VaporeonMouth);
+}
+
+#Vaporeon .cls-6 {
+  fill: var(--VaporeonTongue);
+}
+
+#Vaporeon .cls-7 {
+  fill: var(--VaporeonBackFin);
+}
+
+#Vaporeon .cls-8,
+#Vaporeon .cls-9 {
+  fill: var(--VaporeonBaseColor);
+}
+
+#Vaporeon .cls-10 {
+  fill: var(--VaporeonEyeColor);
+}
+
+
+/* Shiny */
+
+.Shiny svg#VaporeonContainer #Vaporeon {
+  fill: var(--VaporeonShinyOutline);
+}
+
+.Shiny #Vaporeon .cls-1 {
+  fill: var(--VaporeonShinyEarColor);
+}
+
+.Shiny #Vaporeon .cls-2 {
+  fill: var(--VaporeonShinyFurColor);
+}
+
+.Shiny #Vaporeon .cls-4 {
+  fill: var(--VaporeonShinyBaseShadowColor);
+}
+
+.Shiny #Vaporeon .cls-5 {
+  fill: var(--VaporeonShinyMouth);
+}
+
+.Shiny #Vaporeon .cls-6 {
+  fill: var(--VaporeonShinyTongue);
+}
+
+.Shiny #Vaporeon .cls-7 {
+  fill: var(--VaporeonShinyBackFin);
+}
+
+.Shiny #Vaporeon .cls-8,
+.Shiny #Vaporeon .cls-9 {
+  fill: var(--VaporeonShinyBaseColor);
+}
+
+.Shiny #Vaporeon .cls-10 {
+  fill: var(--VaporeonShinyEyeColor);
+}
+
+
+/* ------------------
+------ Flareon --------
+------------------ */
+
+.Flareon svg#FlareonContainer {
+  display: block;
+}
+
+svg#FlareonContainer {
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+  z-index: 10;
+  filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
+  fill: var(--FlareonOutline);
+  display: none;
+}
+
+#Flareon .cls-1 {
+  fill: var(--FlareonFurColor);
+}
+
+#Flareon .cls-2 {
+  fill: var(--FlareonEarEyeColor);
+}
+
+#Flareon .cls-3 {
+  fill: var(--FlareonBaseColor);
+}
+
+#Flareon .cls-4 {
+  fill: var(--FlareonEyeWhite);
+}
+
+#Flareon .cls-5 {
+  fill: var(--FlareonTongue);
+}
+
+#Flareon .cls-6 {
+  fill: var(--FlareonBaseShadowColor);
+}
+
+
+
+/* Shiny */
+
+.Shiny svg#FlareonContainer #Flareon {
+  fill: var(--FlareonShinyOutline);
+}
+
+.Shiny #Flareon .cls-1 {
+  fill: var(--FlareonShinyFurColor);
+}
+
+.Shiny #Flareon .cls-2 {
+  fill: var(--FlareonShinyEarEyeColor);
+}
+
+.Shiny #Flareon .cls-3 {
+  fill: var(--FlareonShinyBaseColor);
+}
+
+.Shiny #Flareon .cls-5 {
+  fill: var(--FlareonShinyTongue);
+}
+
+.Shiny #Flareon .cls-6 {
+  fill: var(--FlareonShinyBaseShadowColor);
+}
+
+
+
+/* ------------------
+------ Espeon -------
+------------------ */
+
+.Espeon svg#EspeonContainer {
+  display: block;
+}
+
+svg#EspeonContainer {
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+  z-index: 10;
+  filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
+  fill: var(--EspeonOutline);
+  display: none;
+}
+
+#Espeon .cls-1 {
+  fill: var(--EspeonEyeWhite);
+}
+
+#Espeon .cls-2 {
+  fill: var(--EspeonDotColor);
+}
+
+#Espeon .cls-3 {
+  fill: var(--EspeonBaseColor);
+}
+
+#Espeon .cls-4 {
+  fill: var(--EspeonOutline);
+}
+
+#Espeon .cls-5 {
+  fill: var(--EspeonBaseShadowColor);
+}
+
+#Espeon .cls-6 {
+  fill: var(--EspeonEyeColor);
+}
+
+#Espeon .cls-7 {
+  fill: var(--EspeonEarColor);
+}
+
+/* Shiny */
+
+.Shiny svg#EspeonContainer #Espeon {
+  fill: var(--UmbreonShinyOutline);
+}
+
+.Shiny #Espeon .cls-2 {
+  fill: var(--EspeonShinyDotColor);
+}
+
+.Shiny #Espeon .cls-3 {
+  fill: var(--EspeonShinyBaseColor);
+}
+
+.Shiny #Espeon .cls-4 {
+  fill: var(--EspeonShinyOutline);
+}
+
+.Shiny #Espeon .cls-5 {
+  fill: var(--EspeonShinyBaseShadowColor);
+}
+
+.Shiny #Espeon .cls-6 {
+  fill: var(--EspeonShinyEyeColor);
+}
+
+.Shiny #Espeon .cls-7 {
+  fill: var(--EspeonShinyEarColor);
+}
+
+
+
+
+/* ------------------
+------ Umbreon --------
+------------------ */
+
+.Umbreon svg#UmbreonContainer {
+  display: block;
+}
+
+svg#UmbreonContainer {
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+  z-index: 10;
+  filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
+  fill: var(--UmbreonOutline);
+  display: none;
+}
+
+#Umbreon .cls-1 {
+  fill: var(--UmbreonRingColor);
+}
+
+#Umbreon .cls-2 {
+  fill: var(--UmbreonEyeWhite);
+}
+
+#Umbreon .cls-3 {
+  fill: var(--UmbreonEyeColor);
+}
+
+#Umbreon .cls-4 {
+  fill: var(--UmbreonBaseColor);
+}
+
+#Umbreon .cls-5 {
+  fill: var(--UmbreonBaseShadowColor);
+}
+
+/* Shiny */
+
+.Shiny svg#UmbreonContainer #Umbreon {
+  fill: var(--UmbreonShinyOutline);
+}
+
+.Shiny #Umbreon .cls-1 {
+  fill: var(--UmbreonShinyRingColor);
+}
+
+.Shiny #Umbreon .cls-3 {
+  fill: var(--UmbreonShinyEyeColor);
+}
+
+.Shiny #Umbreon .cls-4 {
+  fill: var(--UmbreonShinyBaseColor);
+}
+
+.Shiny #Umbreon .cls-5 {
+  fill: var(--UmbreonBaseShadowColor);
+}
+
+
+/* ------------------
+------ Leafeon ------
+------------------ */
+
+.Leafeon svg#LeafeonContainer {
+  display: block;
+}
+
+svg#LeafeonContainer {
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+  z-index: 10;
+  filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
+  fill: var(--LeafeonOutline);
+  display: none;
+}
+
+#Leafeon .cls-1 {
+  fill: var(--LeafeonBaseColor);
+}
+
+#Leafeon .cls-2 {
+  fill: var(--LeafeonEyeWhite);
+}
+
+#Leafeon .cls-3 {
+  fill: var(--LeafeonBaseBrownColor);
+}
+
+#Leafeon .cls-4 {
+  fill: var(--LeafeonLeafColor);
+}
+
+#Leafeon .cls-5 {
+  fill: var(--LeafeonOutline);
+}
+
+#Leafeon .cls-6 {
+  fill: var(--LeafeonLeafEndColor);
+}
+
+#Leafeon .cls-7 {
+  fill: var(--LeafeonBaseBrownShadowColor);
+}
+
+/* Shiny */
+
+.Shiny svg#LeafeonContainer #Leafeon {
+  fill: var(--LeafeonShinyOutline);
+}
+
+.Shiny #Leafeon .cls-1 {
+  fill: var(--LeafeonShinyBaseColor);
+}
+
+.Shiny #Leafeon .cls-3 {
+  fill: var(--LeafeonShinyBaseBrownColor);
+}
+
+.Shiny #Leafeon .cls-4 {
+  fill: var(--LeafeonShinyLeafColor);
+}
+
+.Shiny #Leafeon .cls-5 {
+  fill: var(--LeafeonShinyOutline);
+}
+
+.Shiny #Leafeon .cls-6 {
+  fill: var(--LeafeonShinyLeafEndColor);
+}
+
+.Shiny #Leafeon .cls-7 {
+  fill: var(--LeafeonShinyBaseBrownShadowColor);
+}
+
+
+/* ------------------
+------ Glaceon ------
+------------------ */
+
+.Glaceon svg#GlaceonContainer {
+  display: block;
+}
+
+svg#GlaceonContainer {
+  width: 100%;
+  margin: auto;
+  overflow: visible;
+  z-index: 10;
+  filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
+  fill: var(--GlaceonOutline);
+  display: none;
+}
+
+#Glaceon .cls-1 {
+  fill: var(--GlaceonEyeWhite);
+}
+
+#Glaceon .cls-2 {
+  fill: var(--GlaceonBaseColor);
+}
+
+#Glaceon .cls-3 {
+  fill: var(--GlaceonDarkBlueColor);
+}
+
+#Glaceon .cls-4 {
+  fill: var(--GlaceonOutline);
+}
+
+#Glaceon .cls-5 {
+  fill: var(--GlaceonBaseShadowColor);
+}
+
+#Glaceon .cls-6 {
+  fill: var(--GlaceonSecondairBlueColor);
+}
+
+/* Shiny */
+
+.Shiny svg#GlaceonContainer #Glaceon {
+  fill: var(--GlaceonShinyOutline);
+}
+
+.Shiny #Glaceon .cls-2 {
+  fill: var(--GlaceonShinyBaseColor);
+}
+
+.Shiny #Glaceon .cls-3 {
+  fill: var(--GlaceonShinyDarkBlueColor);
+}
+
+.Shiny #Glaceon .cls-4 {
+  fill: var(--GlaceonShinyOutline);
+}
+
+.Shiny #Glaceon .cls-5 {
+  fill: var(--GlaceonShinyBaseShadowColor);
+}
+
+.Shiny #Glaceon .cls-6 {
+  fill: var(--GlaceonShinySecondairBlueColor);
+}
+
+
+
 /* ------------------
 ---- Evolve -----
 ------------------ */
@@ -402,7 +1128,8 @@ section.Evolve svg#EeveeContainer {
   animation-fill-mode: forwards, none, none;
 }
 
-section.Evolve::after, section.Evolve::before{
+section.Evolve::after,
+section.Evolve::before {
   position: absolute;
   content: "";
   width: 5vw;
@@ -435,12 +1162,14 @@ section.Evolve::before {
     background-color: #ffffff;
   }
 }
-@keyframes EvolveZoom{
-  0%{
+
+@keyframes EvolveZoom {
+  0% {
     width: 5vw;
     height: 5vw;
   }
-  100%{
+
+  100% {
     width: 120vw;
     height: 120vw;
   }
@@ -473,38 +1202,47 @@ section.Evolve #Eevee .cls-5 {
     transform: scale(1) rotate(0);
     filter: drop-shadow(0em 0em 1rem var(--EvolveGlow));
   }
+
   10% {
     transform: scale(0.6, 0.8) rotate(0);
     filter: drop-shadow(0em 0em 1.5rem var(--EvolveGlow));
   }
+
   20% {
     transform: scale(0.9, 1) rotate(0);
     filter: drop-shadow(0em 0em 1rem var(--EvolveGlow));
   }
+
   30% {
     transform: scale(0.4, 1) rotate(0);
     filter: drop-shadow(0em 0em 5rem var(--EvolveGlow));
   }
+
   40% {
     transform: scale(1, 1.3) rotate(0);
     filter: drop-shadow(0em 0em 2rem var(--EvolveGlow));
   }
+
   50% {
     transform: scale(0.5, 1.5) rotate(0);
     filter: drop-shadow(0em 0em 8rem var(--EvolveGlow));
   }
+
   60% {
     transform: scale(0.8, .5) rotate(360deg);
     filter: drop-shadow(0em 0em 3rem var(--EvolveGlow));
   }
+
   70% {
     transform: scale(0.3, .7) rotate(0deg);
     filter: drop-shadow(0em 0em 3rem var(--EvolveGlow));
   }
+
   80% {
     transform: scale(0.5, .4) rotate(-360deg);
     filter: drop-shadow(0em 0em 3rem var(--EvolveGlow));
   }
+
   100% {
     transform: scale(.2) rotate(0);
     filter: drop-shadow(0em 0em 1rem var(--EvolveGlow));
@@ -523,5 +1261,111 @@ section.Evolve #Eevee .cls-5 {
 
 
 /* ------------------
----- Informatie -----
+------ Buttons ------
 ------------------ */
+header {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  position: absolute;
+}
+
+header ul li:first-of-type button, header ul li:nth-of-type(2) button, header ul li:nth-of-type(3) button, header ul li:nth-of-type(4) button{
+  width: 15vw;
+  height: 15vh;
+  border: none;
+  background-color: var(--TransparendBgColor);
+  backdrop-filter: blur(10rem);
+}
+
+header ul li:first-of-type, header ul li:first-of-type button{
+  border-radius: 0 0 50rem 0;
+}
+
+header ul li:nth-of-type(2), header ul li:nth-of-type(2) button{
+  border-radius: 0 0 0 50rem;
+}
+
+header ul li:nth-of-type(3), header ul li:nth-of-type(3) button{
+  border-radius: 0 50rem 0 0;
+}
+
+header ul li:nth-of-type(4), header ul li:nth-of-type(4) button{
+  border-radius: 50rem 0 0 0;
+}
+
+header ul li:first-of-type button svg, header ul li:nth-of-type(2) button svg, header ul li:nth-of-type(3) button svg, header ul li:nth-of-type(4) button svg, header ul li:nth-of-type(5) button svg{
+  max-width: 4rem;
+  fill: #ffffff62;
+}
+
+header ul li:first-of-type button:hover svg, header ul li:nth-of-type(2) button:hover svg, header ul li:nth-of-type(3) button:hover svg, header ul li:nth-of-type(4) button:hover svg, header ul li:nth-of-type(5) button:hover svg{
+  max-width: 4.5rem;
+  fill: #ffffff;
+}
+
+header ul li:first-of-type{
+  top: 0;
+  left: 0;
+}
+
+header ul li:first-of-type:hover{
+  background-color: var(--BgSunnyColor);
+}
+
+header ul li:nth-of-type(2){
+  top: 0;
+  right: 0;
+}
+
+header ul li:nth-of-type(2):hover{
+  background-color: var(--BgDarkColor);
+}
+
+header ul li:nth-of-type(3){
+  bottom: 0;
+  left: 0;
+}
+
+header ul li:nth-of-type(3):hover{
+  background-color: var(--BgGrassyColor);
+}
+
+header ul li:nth-of-type(4){
+  bottom: 0;
+  right: 0;
+}
+
+header ul li:nth-of-type(4):hover{
+  background-color: var(--BgIcyColor);
+}
+
+header ul li:nth-of-type(5){
+  top: 45%;
+  left: 0%;
+}
+
+header ul li:nth-of-type(5) button{
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem;
+  background-color: var(--TransparendBgColor);
+  backdrop-filter: blur(10rem);
+  border: .2rem var(--TransparendBgColor) solid;
+  border-radius: 50%;
+  padding: .8rem;
+}
+
+header ul li:nth-of-type(5) button:hover{
+  border: none;
+  background-color: var(--TransparendHoverBgColor);
+}
