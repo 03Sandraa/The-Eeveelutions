@@ -72,6 +72,8 @@ Mijn startniveau is: rood
 <details>
   <summary>(Dag 6) </summary>
   
+    <img src="https://user-images.githubusercontent.com/90039351/201092844-fd0bad6e-15ef-42c1-ab2e-279fb534ae55.png" width="375px" alt="Versie van 2de feedback">
+  
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
