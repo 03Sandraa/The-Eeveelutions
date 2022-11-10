@@ -116,15 +116,20 @@ Mijn startniveau is: rood
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Ik heb me de afgelopen dagen gefocust op alles goedzetten en werkend krijgen. Hierdoor is de basis animatie voor het evolueren niet meer werkend en niet meer passend.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik heb een nieuwe animatie gemaakt voor het evolueren, waardoor de ervaring één geheel wordt.
 
 
 
   ### Bevinding 3:
-  ...
+  Ik moet meer bronnen gaan toevoegen. Op dit moment had ik nog niet veel bronnen verwerkt.
+  
+  ### Bevinding 4:
+  De overdraagbaarheid zal toenemen als ik meer uitleggende comments zal plaatsen. Hierdoor zullen andere mensen beter weten wat er met elk stukje code gebeurd. Op dit moment heb ik het al wel opgedeeld in de verschillende elementen. Vanwege gebrek aan tijd heb ik dit niet verder uitgewerkt, maar het is iets waar ik in de toekomst aan zal denken.
+  
+  
 
 </details>
 
