@@ -33,35 +33,34 @@ Mijn startniveau is: rood
 ## Voortgang/Feedback 1
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>(Dag 2) Deze eerste feedback is gegeven over het concept idee hierboven.</summary>
   
   ### Feedback punten
   - Het concept past goed bij de opdracht. Leuk dat je specifieke elementen heb uitgezocht die je goed en duidelijk terug laat zien.
   - De schetsen mogen nog iets verder uitgewerkt worden.
   - Idee: je kan misschien de evolutie stenen een leuke animatie geven als je er overheen hovert.
   - Misschien dat er bij elke evolutie er een bijpassende achtergrond komt?
-  - Misschien nog een geluidje van eeve erbij?
+  - Misschien nog een geluidje van eevee erbij?
   - Of een achtegrond muziekje van pokemon
-  - Die eeve die je aan het begin ziet voor de evolutie blijer laten kijken of misschien laten zwaaien naar de gebruiker. Zo is eeve meer interactief met de gebruiker.
+  - Die eevee die je aan het begin ziet voor de evolutie blijer laten kijken of misschien laten zwaaien naar de gebruiker. Zo is eevee meer interactief met de gebruiker.
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Er zijn veel kansen die ik kan benutten om de gebruiker interactie te laten hebben met Eevee buiten het alleen laten evolueren
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Ik wilde het echter niet te complexe maken in het begin. Eerst de basis goed maken voordat ik extra's verder aan ga toepassen, 2 weken zijn namelijk zo om.
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Kijk naar of je geluid toe kunt voegen.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ook dit punt heb ik op de lange baan geschoven, eerst de basis.
 
 
 
   ### Bevinding 3:
-  ...
+  Het is een goed idee om de schetsen nog wat verder uit te werken. Ik had nu een idee waar ik zelf helemaal weg van was en ben dan ook meteen begonnen met het kijken of ik Eevee alvast kon laten bewegen. Dit koste me meteen dan ook de rest van de eerste dag.
 
 </details>
 
@@ -71,7 +70,7 @@ Mijn startniveau is: rood
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>(Dag 6) </summary>
   
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
@@ -100,7 +99,7 @@ Mijn startniveau is: rood
 ## Voortgang/Feedback 3
 
 <details>
-  <summary>Voor mijn 3de feedback moment had ik al het grootste gedeelte zijn mijn ontwerp af. De elementen stonden al op zijn plaats en ik was van plan om nog kleine wijzigingen door te voeren.     
+  <summary>(Dag 8) Voor mijn 3de feedback moment had ik al het grootste gedeelte zijn mijn ontwerp af. De elementen stonden al op zijn plaats en ik was van plan om nog kleine wijzigingen door te voeren.     
 </summary>
   <img src="https://user-images.githubusercontent.com/90039351/201049213-26337bf9-0907-49e1-abfe-b848de10dd89.png" width="375px" alt="Versie van 3de feedback">
   
@@ -147,7 +146,7 @@ Mijn startniveau is: rood
 ## Reflectie
 
 <details>
-  <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
+  <summary>(Dag 9) Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
