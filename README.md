@@ -170,23 +170,27 @@ Mijn startniveau is: rood
 
 ## Bronnenlijst
 
-<details open>
+<details>
 
 Pokemon research
 1. https://www.serebii.net/pokedex-swsh/eevee/
 2. https://www.pokemon.com/us/pokedex/eevee
 3. https://bulbapedia.bulbagarden.net/wiki/Eevee_(Pok%C3%A9mon)
 4. https://pokemon.fandom.com/wiki/Evolutionary_Stones#Thunder_Stone
+5. https://shiny-pokemon.fandom.com/wiki/Jolteon
 
 CSS research
 1. https://www.sarasoueidan.com/blog/svg-object-fit/
 2. https://www.sarasoueidan.com/blog/svg-coordinate-systems/
 3. https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/
+4. https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
   
 CSS Cheat sheet/Tools/Generator
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 2. https://html-css-js.com/css/generator/box-shadow/
 3. https://www.fontsquirrel.com/tools/webfont-generator
+4. https://matthewlein.com/tools/ceaser
+5. https://codepen.io/anthonydugois/pen/mewdyZ <- Voor basis inzichten
   
 JS
 1. https://developer.mozilla.org/en-US/docs/Web/API/Element/animationend_event
