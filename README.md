@@ -105,13 +105,13 @@ Mijn startniveau is: rood
   
   ### Bevinding 1:
   Ik was me ervan bewust dat ik nog wat moest gaan doen voor het lettertype. Ik had tot nu toe met een standaard neutraal font gewerkt en me vooral gefocust op de rest van de elementen. 
-    <img src="https://user-images.githubusercontent.com/90039351/201051494-bdb476ba-9232-4532-ac5c-e93fca1d4aea.png" width="375px" alt="Font van 3de feedback">
+  
+ <img src="https://user-images.githubusercontent.com/90039351/201051494-bdb476ba-9232-4532-ac5c-e93fca1d4aea.png" width="375px" alt="Font van 3de feedback">
     
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Ik ben op zoek gegaan naar Pokemon fonts en fonts die in het verlengde daarvan liggen. Ik kwam een costum font tegen die lijkt op het font dat in het Pokemon spel Let's Go Pikachu and Eevee wordt gebruikt. Dat vond ik erg passen bij het thema.
   
   <img src="https://user-images.githubusercontent.com/90039351/201052506-50559f52-f6aa-40e6-b67b-e1ece026aef9.png" width="375px" alt="Font na 3de feedback">
-    
   <img src="https://user-images.githubusercontent.com/90039351/201052518-ec86fb67-a384-47b7-b4bb-c7c39d75db82.png" width="375px" alt="Font na 3de feedback">
 
 
