@@ -171,12 +171,32 @@ Mijn startniveau is: rood
 ## Bronnenlijst
 
 <details open>
-<summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
+Pokemon research
+1. https://www.serebii.net/pokedex-swsh/eevee/
+2. https://www.pokemon.com/us/pokedex/eevee
+3. https://bulbapedia.bulbagarden.net/wiki/Eevee_(Pok%C3%A9mon)
+4. https://pokemon.fandom.com/wiki/Evolutionary_Stones#Thunder_Stone
 
-1. bron 1
-2. bron 2
-3. ...
-
+CSS research
+1. https://www.sarasoueidan.com/blog/svg-object-fit/
+2. https://www.sarasoueidan.com/blog/svg-coordinate-systems/
+3. https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/
+  
+CSS Cheat sheet/Tools/Generator
+1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2. https://html-css-js.com/css/generator/box-shadow/
+3. https://www.fontsquirrel.com/tools/webfont-generator
+  
+JS
+1. https://developer.mozilla.org/en-US/docs/Web/API/Element/animationend_event
+  
+Afbeeldingen
+  1. https://toppng.com/heart-pokemon-filled-icon-icon-PNG-free-PNG-Images_127650
+  2. https://bulbapedia.bulbagarden.net/wiki/Evolution_stone
+  3. https://www.pokemon.com/nl/pokedex/eevee <- Handmatig SVGs van gemaakt.
+  
+Font
+  1. https://www.deviantart.com/mucrush/art/Font-Pack-Let-s-Go-Pikachu-and-Eevee-773910894
+  
 </details>
