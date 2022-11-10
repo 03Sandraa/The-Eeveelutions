@@ -182,7 +182,8 @@ Ik heb me verder ontwikkeld in CSS. Zo heb ik me verdiept in het transformeren v
 
 
   ### Dit was lastig/Is niet gelukt:
-Ik heb al mijn tijd gestoken in het coderen en het doen dat dingen zoals de readme en de schetsen wat werden weggedrukt. Vooral toen ik de tijdsdruk begon te voelen, heb ik de volle focussen op het coderen gelegd. Hierdoor ben ik wel vergekomen, maar zag ik het halverwege niet meer zo zitten. Al hoewel ik erg trots ben op het eindresultaat heb ik alsnog een lijstje met dingen die ik het liefst ook nog toe had willen voegen. Zoals een SVG animatie op een ander soort manier dan dat ik nu heb.
+Ik heb al mijn tijd gestoken in het coderen en het doen dat dingen zoals de readme en de schetsen wat werden weggedrukt. Vooral toen ik de tijdsdruk begon te voelen, heb ik de volle focussen op het coderen gelegd. Hierdoor ben ik wel vergekomen, maar zag ik het halverwege niet meer zo zitten. Al hoewel ik erg trots ben op het eindresultaat heb ik alsnog een lijstje met dingen die ik het liefst ook nog toe had willen voegen. Zoals een SVG animatie op een ander soort manier dan dat ik nu heb en een indicatie van welke onderdelen je al heb toegevoegd (zoals liefde voordat je Eevee level up't).
+
 </details>
 
 
