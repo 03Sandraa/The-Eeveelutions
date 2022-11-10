@@ -34,6 +34,15 @@ Mijn startniveau is: rood
 
 <details>
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  
+  ### Feedback punten
+  - Het concept past goed bij de opdracht. Leuk dat je specifieke elementen heb uitgezocht die je goed en duidelijk terug laat zien.
+  - De schetsen mogen nog iets verder uitgewerkt worden.
+  - Idee: je kan misschien de evolutie stenen een leuke animatie geven als je er overheen hovert.
+  - Misschien dat er bij elke evolutie er een bijpassende achtergrond komt?
+  - Misschien nog een geluidje van eeve erbij?
+  - Of een achtegrond muziekje van pokemon
+  - Die eeve die je aan het begin ziet voor de evolutie blijer laten kijken of misschien laten zwaaien naar de gebruiker. Zo is eeve meer interactief met de gebruiker.
 
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
@@ -120,7 +129,6 @@ Mijn startniveau is: rood
 
   #### oplossing:
   Ik heb een nieuwe animatie gemaakt voor het evolueren, waardoor de ervaring één geheel wordt.
-
 
 
   ### Bevinding 3:
