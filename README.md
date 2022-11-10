@@ -70,29 +70,49 @@ Mijn startniveau is: rood
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>(Dag 6) </summary>
+  <summary>(Dag 6) Deze feedback kreeg ik over de eerste versie waarin ik mijn eerste idee had verwerkt</summary>
   
-    <img src="https://user-images.githubusercontent.com/90039351/201092844-fd0bad6e-15ef-42c1-ab2e-279fb534ae55.png" width="375px" alt="Versie van 2de feedback">
+<img src="https://user-images.githubusercontent.com/90039351/201092844-fd0bad6e-15ef-42c1-ab2e-279fb534ae55.png" width="375px" alt="Versie van 2de feedback">
+  
+  Ik had hierbij de elementen om Eevee heen gezet en deze op verschillende manieren laten draaien. Ook kon Eevee al evolueren, echter zaten nog niet alle versies van de evoluties er nog in. Ook waren nier alle icoontjes nog compleet.
+  
+  ### Feedback punten
+  - Het is saai ("te makkelijk") om de informatie in te laten vliegen vanaf de zijkant.
+  - Verander de div's in figures.
+  - De pagina is niet bestuurbaar via tab/ niet alle elementen die een button horen te zijn zijn buttons.
+  - Je CSS properties zijn niet overal op dezelfde volgorde
+  - Kijk nog eens naar de lijn diktes.
+  
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  In mijn eerste ontwerp leek het me leuk om informatie te laten tonen doormiddel van een kader aan de rechterkant van het scherm in te laten sliden. Dit werd door de docent als saai betiteld en moest ik op zoek naar een nieuw idee.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+Ik bedacht om het ontwerp volledig te focussen of visuals en het zelf ontdekken welke gevolgen welke acties hebben. Hierbij is er wel een cheat sheet verborgen zodat de gebruiker wel kan ontdekken wat hij of zij moet doen om een bepaalde eeveelution te krijgen. 
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+Ik had veel div's gebruikt uit gemak, deze heb ik veranderd in andere passendere elementen.
 
 
 
   ### Bevinding 3:
-  ...
+Ik werk in een niet vaste volgorde van de CSS properties, over het algemeen staat de plaatsing bovenin en daarna is het vaak random. Uit tijdgebrek heb ik dit niet verder aangepast.
+  
+    ### Bevinding 4:
+De pagina is niet te besturen door toetsenbord. 
+  
+    #### oplossing:
+  Uit tijdgebrek heb ik niet de bestaande elementen aangepast om hieraan wel te voldoen. Wel heb ik nieuwe elementen voorzien van deze functie.
 
+  
+  ### Bevinding 5:
+  De lijn dikte is niet overal even dik. 
+  
+   #### oplossing:
+  Ik heb gekeken voor een aantal vervangen de iconen. Deze zijn echter erg lastig te vinden daarom heb ik ervoor gekozen om een verschil te houden in lijn dikte tussen de stenen en eevee.
+  
 </details>
 
 
