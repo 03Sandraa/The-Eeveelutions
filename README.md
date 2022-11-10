@@ -194,6 +194,9 @@ CSS Cheat sheet/Tools/Generator
   
 JS
 1. https://developer.mozilla.org/en-US/docs/Web/API/Element/animationend_event
+2. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/drop_event
+3. https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dragstart_event
+4. https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click
   
 Afbeeldingen
   1. https://toppng.com/heart-pokemon-filled-icon-icon-PNG-free-PNG-Images_127650
