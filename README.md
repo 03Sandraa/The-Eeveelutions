@@ -184,6 +184,7 @@ CSS research
 2. https://www.sarasoueidan.com/blog/svg-coordinate-systems/
 3. https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/
 4. https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
+5. https://css-tricks.com/the-shapes-of-css/
   
 CSS Cheat sheet/Tools/Generator
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
