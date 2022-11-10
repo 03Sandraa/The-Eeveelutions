@@ -100,10 +100,10 @@ Ik had veel div's gebruikt uit gemak, deze heb ik veranderd in andere passendere
   ### Bevinding 3:
 Ik werk in een niet vaste volgorde van de CSS properties, over het algemeen staat de plaatsing bovenin en daarna is het vaak random. Uit tijdgebrek heb ik dit niet verder aangepast.
   
-    ### Bevinding 4:
+### Bevinding 4:
 De pagina is niet te besturen door toetsenbord. 
   
-    #### oplossing:
+#### oplossing:
   Uit tijdgebrek heb ik niet de bestaande elementen aangepast om hieraan wel te voldoen. Wel heb ik nieuwe elementen voorzien van deze functie.
 
   
