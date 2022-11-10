@@ -203,6 +203,7 @@ Afbeeldingen
   1. https://toppng.com/heart-pokemon-filled-icon-icon-PNG-free-PNG-Images_127650
   2. https://bulbapedia.bulbagarden.net/wiki/Evolution_stone
   3. https://www.pokemon.com/nl/pokedex/eevee <- Handmatig SVGs van gemaakt.
+  4. Pokemon Sword Nintendo Switch -> Screenshots -> Achtergrond afbeeldingen 
   
 Font
   1. https://www.deviantart.com/mucrush/art/Font-Pack-Let-s-Go-Pikachu-and-Eevee-773910894
