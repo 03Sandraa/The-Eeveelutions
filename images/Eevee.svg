@@ -21,7 +21,7 @@
       .cls-5 {
         fill: #603a15;
       }
-
+<!-- 
 #Tail {
   animation-name: EeveeWaveTail;
   animation-duration: 1s;
@@ -68,7 +68,7 @@
   100% {
     transform: scaleY(1);
   }
-}
+} -->
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">

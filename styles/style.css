@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'PokemonFont';
+  src: url('../Font/font_pack__let_s_go_pikachu_and_eevee_by_mucrush_dcsrlgu-webfont.woff2') format('woff2'),
+    url('../Font/font_pack__let_s_go_pikachu_and_eevee_by_mucrush_dcsrlgu-webfont.woff') format('woff');
+  /* Bron : https://www.deviantart.com/mucrush/art/Font-Pack-Let-s-Go-Pikachu-and-Eevee-773910894 */
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 /*************/
 /* CSS RESET */
 /*************/
@@ -21,7 +31,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'PokemonFont', Arial, Helvetica, sans-serif;
+  letter-spacing: 0rem;
+  transition: all 400ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 body.Dark {
@@ -267,7 +279,7 @@ button:not([disabled]) {
 
 h1 {
   position: absolute;
-  bottom: -7vh;
+  bottom: -9vh;
   width: 100%;
   text-align: center;
   font-size: 2rem;
@@ -278,12 +290,17 @@ h1 {
 --- eerste sectie ---
 ------------------ */
 
+
 section:first-of-type {
+  position: relative;
   display: grid;
   place-items: center;
-  position: relative;
   margin: 1rem;
 }
+
+
+
+
 
 /* ------------------
 -- Elementen ring ---
@@ -307,6 +324,10 @@ section:first-of-type>ul:nth-of-type(1)>li {
   list-style: none;
 }
 
+.Overlay section:first-of-type>ul:nth-of-type(1)>li {
+  animation-play-state: paused;
+}
+
 section:first-of-type>ul:nth-of-type(1):hover>li {
   animation-play-state: paused;
 }
@@ -323,6 +344,10 @@ section:first-of-type>ul:nth-of-type(1)>li>img {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Overlay section:first-of-type>ul:nth-of-type(1)>li>img {
+  animation-play-state: paused;
 }
 
 section:first-of-type>ul:nth-of-type(1)>li>img:hover {
@@ -412,6 +437,10 @@ section:first-of-type>ul:nth-of-type(1)>li:nth-of-type(8):hover {
   }
 }
 
+
+
+
+
 /* ------------------
 ----- Pokeball ------
 ------------------ */
@@ -499,6 +528,9 @@ section:first-of-type figure:first-of-type img {
 }
 
 
+
+
+
 /* ------------------
 ------ Eevee --------
 ------------------ */
@@ -507,6 +539,7 @@ figure:nth-of-type(2) {
   width: 40vw;
   max-width: 20rem;
   aspect-ratio: 1 / 1;
+  z-index: 2;
 }
 
 svg#EeveeContainer {
@@ -516,6 +549,11 @@ svg#EeveeContainer {
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
   fill: var(--EeveeOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.Overlay svg#EeveeContainer {
+  animation-play-state: paused;
 }
 
 .Jolteon svg#EeveeContainer,
@@ -531,22 +569,27 @@ svg#EeveeContainer {
 
 #Eevee .cls-1 {
   fill: var(--EeveeFurColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Eevee .cls-2 {
   fill: var(--EeveeEyeWhite);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Eevee .cls-3 {
   fill: var(--EeveeBaseShadowColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Eevee .cls-4 {
   fill: var(--EeveeBaseColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Eevee .cls-5 {
   fill: var(--EeveeEarEyeColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 /* Shiny */
@@ -621,6 +664,8 @@ svg#EeveeContainer #Eevee {
 
 
 
+
+
 /* ------------------
 ------ Jolteon --------
 ------------------ */
@@ -636,27 +681,33 @@ svg#JolteonContainer {
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
   fill: var(--JolteonOutline);
+  transition: all 1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
   display: none;
 }
 
-#Jolteon .cls-1 {
+.Jolteon #Jolteon .cls-1 {
   fill: var(--JolteonBaseColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-#Jolteon .cls-2 {
+.Jolteon #Jolteon .cls-2 {
   fill: var(--JolteonEyeWhite);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-#Jolteon .cls-3 {
+.Jolteon #Jolteon .cls-3 {
   fill: var(--JolteonBaseShadowColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-#Jolteon .cls-4 {
+.Jolteon #Jolteon .cls-4 {
   fill: var(--JolteonFurColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-#Jolteon .cls-5 {
+.Jolteon #Jolteon .cls-5 {
   fill: var(--JolteonEarEyeColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 /* Shiny */
@@ -684,6 +735,7 @@ svg#JolteonContainer {
 
 
 
+
 /* ------------------
 ----- Vaporeon ------
 ------------------ */
@@ -704,39 +756,48 @@ svg#VaporeonContainer {
 
 #Vaporeon .cls-1 {
   fill: var(--VaporeonEarColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Vaporeon .cls-2 {
   fill: var(--VaporeonFurColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Vaporeon .cls-3 {
   fill: var(--VaporeonEyeWhite);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Vaporeon .cls-4 {
   fill: var(--VaporeonBaseShadowColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Vaporeon .cls-5 {
   fill: var(--VaporeonMouth);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Vaporeon .cls-6 {
   fill: var(--VaporeonTongue);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Vaporeon .cls-7 {
   fill: var(--VaporeonBackFin);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Vaporeon .cls-8,
 #Vaporeon .cls-9 {
   fill: var(--VaporeonBaseColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Vaporeon .cls-10 {
   fill: var(--VaporeonEyeColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 
@@ -780,6 +841,9 @@ svg#VaporeonContainer {
 }
 
 
+
+
+
 /* ------------------
 ------ Flareon --------
 ------------------ */
@@ -795,31 +859,38 @@ svg#FlareonContainer {
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
   fill: var(--FlareonOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
   display: none;
 }
 
 #Flareon .cls-1 {
   fill: var(--FlareonFurColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Flareon .cls-2 {
   fill: var(--FlareonEarEyeColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Flareon .cls-3 {
   fill: var(--FlareonBaseColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Flareon .cls-4 {
   fill: var(--FlareonEyeWhite);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Flareon .cls-5 {
   fill: var(--FlareonTongue);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Flareon .cls-6 {
   fill: var(--FlareonBaseShadowColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 
@@ -852,6 +923,8 @@ svg#FlareonContainer {
 
 
 
+
+
 /* ------------------
 ------ Espeon -------
 ------------------ */
@@ -867,35 +940,43 @@ svg#EspeonContainer {
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
   fill: var(--EspeonOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
   display: none;
 }
 
 #Espeon .cls-1 {
   fill: var(--EspeonEyeWhite);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Espeon .cls-2 {
   fill: var(--EspeonDotColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Espeon .cls-3 {
   fill: var(--EspeonBaseColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Espeon .cls-4 {
   fill: var(--EspeonOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Espeon .cls-5 {
   fill: var(--EspeonBaseShadowColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Espeon .cls-6 {
   fill: var(--EspeonEyeColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Espeon .cls-7 {
   fill: var(--EspeonEarColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 /* Shiny */
@@ -931,6 +1012,7 @@ svg#EspeonContainer {
 
 
 
+
 /* ------------------
 ------ Umbreon --------
 ------------------ */
@@ -946,27 +1028,33 @@ svg#UmbreonContainer {
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
   fill: var(--UmbreonOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
   display: none;
 }
 
 #Umbreon .cls-1 {
   fill: var(--UmbreonRingColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Umbreon .cls-2 {
   fill: var(--UmbreonEyeWhite);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Umbreon .cls-3 {
   fill: var(--UmbreonEyeColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Umbreon .cls-4 {
   fill: var(--UmbreonBaseColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Umbreon .cls-5 {
   fill: var(--UmbreonBaseShadowColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 /* Shiny */
@@ -992,6 +1080,9 @@ svg#UmbreonContainer {
 }
 
 
+
+
+
 /* ------------------
 ------ Leafeon ------
 ------------------ */
@@ -1007,35 +1098,43 @@ svg#LeafeonContainer {
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
   fill: var(--LeafeonOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
   display: none;
 }
 
 #Leafeon .cls-1 {
   fill: var(--LeafeonBaseColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Leafeon .cls-2 {
   fill: var(--LeafeonEyeWhite);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Leafeon .cls-3 {
   fill: var(--LeafeonBaseBrownColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Leafeon .cls-4 {
   fill: var(--LeafeonLeafColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Leafeon .cls-5 {
   fill: var(--LeafeonOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Leafeon .cls-6 {
   fill: var(--LeafeonLeafEndColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Leafeon .cls-7 {
   fill: var(--LeafeonBaseBrownShadowColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 /* Shiny */
@@ -1069,6 +1168,9 @@ svg#LeafeonContainer {
 }
 
 
+
+
+
 /* ------------------
 ------ Glaceon ------
 ------------------ */
@@ -1084,31 +1186,38 @@ svg#GlaceonContainer {
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
   fill: var(--GlaceonOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
   display: none;
 }
 
 #Glaceon .cls-1 {
   fill: var(--GlaceonEyeWhite);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Glaceon .cls-2 {
   fill: var(--GlaceonBaseColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Glaceon .cls-3 {
   fill: var(--GlaceonDarkBlueColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Glaceon .cls-4 {
   fill: var(--GlaceonOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Glaceon .cls-5 {
   fill: var(--GlaceonBaseShadowColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Glaceon .cls-6 {
   fill: var(--GlaceonSecondairBlueColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 /* Shiny */
@@ -1139,6 +1248,8 @@ svg#GlaceonContainer {
 
 
 
+
+
 /* ------------------
 ------ Sylveon ------
 ------------------ */
@@ -1154,34 +1265,45 @@ svg#SylveonContainer {
   z-index: 10;
   filter: drop-shadow(0em 0em 1rem var(--EeveeBgGlow));
   fill: var(--SylveonOutline);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
   display: none;
 }
 
 #Sylveon .cls-1 {
   fill: var(--SylveonEyeWhite);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-#Sylveon .cls-2, #Sylveon .cls-5 {
+#Sylveon .cls-2,
+#Sylveon .cls-5 {
   fill: var(--SylveonBaseColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Sylveon .cls-3 {
   fill: var(--SylveonBaseShadowColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Sylveon .cls-4 {
   fill: var(--SylveonPinkLightDetailColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 #Sylveon .cls-6 {
   fill: var(--SylveonPinkDarkDetailColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-#Sylveon .cls-7, #Sylveon .cls-9 {
+#Sylveon .cls-7,
+#Sylveon .cls-9 {
   fill: var(--SylveonBlueDarkDetailColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
-#Sylveon .cls-10{
+
+#Sylveon .cls-10 {
   fill: var(--SylveonBlueLightDetailColor);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 /* Shiny */
@@ -1190,7 +1312,8 @@ svg#SylveonContainer {
   fill: var(--SylveonShinyOutline);
 }
 
-.Shiny #Sylveon .cls-2, .Shiny #Sylveon .cls-5 {
+.Shiny #Sylveon .cls-2,
+.Shiny #Sylveon .cls-5 {
   fill: var(--SylveonShinyBaseColor);
 }
 
@@ -1206,7 +1329,8 @@ svg#SylveonContainer {
   fill: var(--SylveonShinyPinkDarkDetailColor);
 }
 
-.Shiny #Sylveon .cls-7, .Shiny #Sylveon .cls-9 {
+.Shiny #Sylveon .cls-7,
+.Shiny #Sylveon .cls-9 {
   fill: var(--SylveonShinyBlueDarkDetailColor);
 }
 
@@ -1215,25 +1339,19 @@ svg#SylveonContainer {
 }
 
 
+
+
+
 /* ------------------
 ---- Evolve -----
 ------------------ */
 
-section.Evolve svg#EeveeContainer {
-  animation-name: EvolveColor, EvolveMovementPokemon, EvolveSpin;
-  animation-duration: 1s, 2s, 0.5s;
-  animation-delay: 0s, 0s, 2s;
-  animation-iteration-count: 1, 1, infinite;
-  animation-timing-function: linear, linear, linear;
-  animation-fill-mode: forwards, none, none;
-}
-
-section.Evolve::after,
-section.Evolve::before {
+section:first-of-type figure:nth-of-type(2) div.Evolve::after,
+section:first-of-type figure:nth-of-type(2) div.Evolve::before {
   position: absolute;
   content: "";
-  width: 5vw;
-  height: 5vw;
+  width: 0vw;
+  height: 0vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1241,61 +1359,90 @@ section.Evolve::before {
   z-index: 20;
 
   animation-name: EvolveSpinBefore, EvolveZoom;
-  animation-delay: 2s, 5s;
+  animation-delay: 2s, 4s;
   animation-duration: 1s, 5s;
   animation-iteration-count: infinite, 1;
   animation-timing-function: linear, linear;
 }
 
-section.Evolve::before {
-  animation-delay: 2.1s, 5s;
+section.Jolteon:first-of-type figure:nth-of-type(2) div::after,
+section.Jolteon:first-of-type figure:nth-of-type(2) div::before,
+section.Flareon:first-of-type figure:nth-of-type(2) div::after,
+section.Flareon:first-of-type figure:nth-of-type(2) div::before,
+section.Vaporeon:first-of-type figure:nth-of-type(2) div::after,
+section.Vaporeon:first-of-type figure:nth-of-type(2) div::before,
+section.Umbreon:first-of-type figure:nth-of-type(2) div::after,
+section.Umbreon:first-of-type figure:nth-of-type(2) div::before,
+section.Espeon:first-of-type figure:nth-of-type(2) div::after,
+section.Espeon:first-of-type figure:nth-of-type(2) div::before,
+section.Leafeon:first-of-type figure:nth-of-type(2) div::after,
+section.Leafeon:first-of-type figure:nth-of-type(2) div::before,
+section.Glaceon:first-of-type figure:nth-of-type(2) div::after,
+section.Glaceon:first-of-type figure:nth-of-type(2) div::before,
+section.Sylveon:first-of-type figure:nth-of-type(2) div::after,
+section.Sylveon:first-of-type figure:nth-of-type(2) div::before {
+  display: none;
+}
+
+section:first-of-type figure:nth-of-type(2) div.Evolve::before {
+  animation-delay: 2.1s, 4s;
 }
 
 @keyframes EvolveSpinBefore {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
-    background-color: #ffffff;
+    background-color: var(--EvolveGlow);
   }
 
   to {
     transform: translate(-50%, -50%) rotate(360deg);
-    background-color: #ffffff;
+    background-color: var(--EvolveGlow);
   }
 }
 
 @keyframes EvolveZoom {
   0% {
-    width: 5vw;
-    height: 5vw;
+    width: 0vw;
+    height: 0vw;
+  }
+
+  40% {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  95% {
+    width: 50vw;
+    height: 50vw;
   }
 
   100% {
-    width: 120vw;
-    height: 120vw;
+    width: 0vw;
+    height: 0vw;
   }
 }
 
-section.Evolve #Eevee .cls-1,
-section.Evolve #Eevee .cls-2,
-section.Evolve #Eevee .cls-3,
-section.Evolve #Eevee .cls-4,
-section.Evolve #Eevee .cls-5 {
-  animation-name: EvolveColor;
-  animation-duration: 1s;
+section.Evolve svg#EeveeContainer {
+  animation-name: EvolveMovementPokemon;
+  animation-duration: 5s;
+  animation-delay: 0s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
-@keyframes EvolveColor {
-  0% {
-    fill: inherit;
-  }
-
-  100% {
-    fill: white;
-  }
+section.Evolve #Eevee path,
+section.Evolve #Eevee .cls-1,
+section.Evolve #Eevee .cls-2,
+section.Evolve #Eevee .cls-3,
+section.Evolve #Eevee .cls-4,
+section.Evolve #Eevee .cls-5 {
+  fill: var(--EvolveGlow);
+  stroke-width: 1;
+  stroke: var(--EvolveGlow);
+  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
+
 
 @keyframes EvolveMovementPokemon {
   0% {
@@ -1316,6 +1463,7 @@ section.Evolve #Eevee .cls-5 {
   30% {
     transform: scale(0.4, 1) rotate(0);
     filter: drop-shadow(0em 0em 5rem var(--EvolveGlow));
+
   }
 
   40% {
@@ -1349,15 +1497,38 @@ section.Evolve #Eevee .cls-5 {
   }
 }
 
-@keyframes EvolveSpin {
-  from {
-    transform: scale(.2) rotate(0deg);
+.Evolve #Jolteon path,
+.Evolve #Vaporeon path,
+.Evolve #Flareon path,
+.Evolve #Espeon path,
+.Evolve #Umbreon path,
+.Evolve #Leafeon path,
+.Evolve #Glaceon path,
+.Evolve #Sylveon path {
+  transition: all 500ms linear;
+  animation-name: EvolveColor;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes EvolveColor {
+  0% {
+    fill: rgba(255, 255, 255, 0.8);
+    transition: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transform-origin: 50% 50%;
+    transform: scale(0.9);
   }
 
-  to {
-    transform: scale(.2) rotate(360deg);
+  100% {
+    fill: color;
+    transform: scale(1);
   }
 }
+
+
+
 
 
 /* ------------------
@@ -1379,87 +1550,113 @@ header ul li {
   position: absolute;
 }
 
-header ul li:first-of-type button, header ul li:nth-of-type(2) button, header ul li:nth-of-type(3) button, header ul li:nth-of-type(4) button{
+header ul li:first-of-type button,
+header ul li:nth-of-type(2) button,
+header ul li:nth-of-type(3) button,
+header ul li:nth-of-type(4) button {
   width: 15vw;
   height: 15vh;
   border: none;
   background-color: var(--TransparendBgColor);
   backdrop-filter: blur(10rem);
+  transition: all 500ms linear;
+
 }
 
-header ul li:first-of-type, header ul li:first-of-type button{
+header ul li:first-of-type,
+header ul li:first-of-type button {
   border-radius: 0 0 50rem 0;
 }
 
-header ul li:nth-of-type(2), header ul li:nth-of-type(2) button{
+header ul li:nth-of-type(2),
+header ul li:nth-of-type(2) button {
   border-radius: 0 0 0 50rem;
 }
 
-header ul li:nth-of-type(3), header ul li:nth-of-type(3) button{
+header ul li:nth-of-type(3),
+header ul li:nth-of-type(3) button {
   border-radius: 0 50rem 0 0;
 }
 
-header ul li:nth-of-type(4), header ul li:nth-of-type(4) button{
+header ul li:nth-of-type(4),
+header ul li:nth-of-type(4) button {
   border-radius: 50rem 0 0 0;
 }
 
-header ul li:first-of-type button svg, header ul li:nth-of-type(2) button svg, header ul li:nth-of-type(3) button svg, header ul li:nth-of-type(4) button svg, header ul li:nth-of-type(5) button svg, header ul li:nth-of-type(6) button svg{
+header ul li:first-of-type button svg,
+header ul li:nth-of-type(2) button svg,
+header ul li:nth-of-type(3) button svg,
+header ul li:nth-of-type(4) button svg,
+header ul li:nth-of-type(5) button svg,
+header ul li:nth-of-type(6) button svg {
   max-width: 4rem;
   fill: #ffffff62;
+  transition: all 500ms linear;
 }
 
-header ul li:first-of-type button:hover svg, header ul li:nth-of-type(2) button:hover svg, header ul li:nth-of-type(3) button:hover svg, header ul li:nth-of-type(4) button:hover svg, header ul li:nth-of-type(5) button:hover svg, header ul li:nth-of-type(6) button:hover svg{
+header ul li:first-of-type button:hover svg,
+header ul li:nth-of-type(2) button:hover svg,
+header ul li:nth-of-type(3) button:hover svg,
+header ul li:nth-of-type(4) button:hover svg,
+header ul li:nth-of-type(5) button:hover svg,
+header ul li:nth-of-type(6) button:hover svg {
   max-width: 4.5rem;
   fill: #ffffff;
+  transition: all 300ms linear;
 }
 
-header ul li:first-of-type{
+header ul li:first-of-type {
   top: 0;
   left: 0;
 }
 
-header ul li:first-of-type:hover{
+header ul li:first-of-type:hover {
   background-color: var(--BgSunnyColor);
+  transition: all 300ms linear;
 }
 
-header ul li:nth-of-type(2){
+header ul li:nth-of-type(2) {
   top: 0;
   right: 0;
 }
 
-header ul li:nth-of-type(2):hover{
+header ul li:nth-of-type(2):hover {
   background-color: var(--BgDarkColor);
+  transition: all 300ms linear;
 }
 
-header ul li:nth-of-type(3){
+header ul li:nth-of-type(3) {
   bottom: 0;
   left: 0;
 }
 
-header ul li:nth-of-type(3):hover{
+header ul li:nth-of-type(3):hover {
   background-color: var(--BgGrassyColor);
+  transition: all 300ms linear;
 }
 
-header ul li:nth-of-type(4){
+header ul li:nth-of-type(4) {
   bottom: 0;
   right: 0;
 }
 
-header ul li:nth-of-type(4):hover{
+header ul li:nth-of-type(4):hover {
   background-color: var(--BgIcyColor);
+  transition: all 300ms linear;
 }
 
-header ul li:nth-of-type(5){
+header ul li:nth-of-type(5) {
   top: 45%;
   right: 0%;
 }
 
-header ul li:nth-of-type(6){
+header ul li:nth-of-type(6) {
   top: 45%;
   left: 0%;
 }
 
-header ul li:nth-of-type(5) button, header ul li:nth-of-type(6) button{
+header ul li:nth-of-type(5) button,
+header ul li:nth-of-type(6) button {
   width: 5rem;
   height: 5rem;
   margin: 2rem;
@@ -1468,9 +1665,147 @@ header ul li:nth-of-type(5) button, header ul li:nth-of-type(6) button{
   border: .2rem var(--TransparendBgColor) solid;
   border-radius: 50%;
   padding: .8rem;
+  transition: all 500ms linear;
 }
 
-header ul li:nth-of-type(5) button:hover, header ul li:nth-of-type(6) button:hover{
-  border: none;
+header ul li:nth-of-type(5) button:hover,
+header ul li:nth-of-type(6) button:hover {
+  border: 0rem var(--TransparendBgColor) solid;
   background-color: var(--TransparendHoverBgColor);
+  transition: all 300ms linear;
+}
+
+
+
+
+
+/* ------------------
+---- Cheat Sheet ----
+------------------ */
+
+section:nth-of-type(2) {
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  z-index: 1;
+  width: .7rem;
+  height: .7rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2rem;
+  backdrop-filter: blur(10rem);
+  box-shadow: 0em 0em .8rem 0.5rem rgba(255, 255, 255, 0.177), 0em 0em 1rem 0.7rem rgba(255, 255, 255, 0.177), 0em 0em 1rem 0.9rem rgba(255, 255, 255, 0.177);
+  transition: left linear 2s, top linear 2s;
+  animation-name: GlowingSecret;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes GlowingSecret {
+  0% {
+    box-shadow: 0em 0em .5rem 0.3rem rgba(255, 255, 255, 0.177), 0em 0em 1rem 0.5rem rgba(255, 255, 255, 0.177), 0em 0em 1rem 0.7rem rgba(255, 255, 255, 0.177);
+  }
+
+  50% {
+    box-shadow: 0em 0em .5rem 0.1rem rgba(255, 255, 255, 0.177), 0em 0em 1rem 0.3rem rgba(255, 255, 255, 0.177), 0em 0em 1rem 0.4rem rgba(255, 255, 255, 0.177);
+  }
+
+  100% {
+    box-shadow: 0em 0em .5rem 0.3rem rgba(255, 255, 255, 0.177), 0em 0em 1rem 0.5rem rgba(255, 255, 255, 0.177), 0em 0em 1rem 0.7rem rgba(255, 255, 255, 0.177);
+  }
+}
+
+section:nth-of-type(2).Stage1 {
+  top: 70vh;
+  left: 90vw;
+  transition: left linear 2s, top linear 2s;
+}
+
+section:nth-of-type(2).Stage2 {
+  top: 90vh;
+  left: 20vw;
+  transition: left linear 2s, top linear 2s;
+}
+
+section:nth-of-type(2).Open {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50vw;
+  height: 50vh;
+  overflow: scroll;
+  background-color: var(--TransparendBgColor);
+  border: transparent 1rem solid;
+  z-index: 30;
+  box-shadow: none;
+  transition: linear .3s;
+}
+
+section:nth-of-type(2) h2 {
+  color: white;
+  margin: 1rem 2rem;
+  border-bottom: 0.2rem --TransparendBgColor solid;
+  display: none;
+}
+
+section.Open h2 {
+  display: block;
+}
+
+section:nth-of-type(2) ul {
+  list-style: none;
+  width: 90%;
+  margin: auto;
+  overflow-x: auto;
+  display: none;
+}
+
+section.Open ul {
+  display: block;
+}
+
+
+section:nth-of-type(2) ol {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+section:nth-of-type(2) ol li:not(section:nth-of-type(2) ol li:nth-of-type(2), section:nth-of-type(2) ol li:nth-of-type(4), section:nth-of-type(2) ol li:nth-of-type(6), section:nth-of-type(2) ol li:nth-of-type(8)) {
+  width: 4rem;
+  min-width: 4rem;
+  height: 4rem;
+  background-color: var(--TransparendBgColor);
+  border-radius: 50%;
+  margin: 0.5rem 0;
+  display: grid;
+  place-content: center;
+}
+
+section:nth-of-type(2) ol li:nth-of-type(2),
+section:nth-of-type(2) ol li:nth-of-type(4),
+section:nth-of-type(2) ol li:nth-of-type(6),
+section:nth-of-type(2) ol li:nth-of-type(8) {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+section:nth-of-type(2) ol li img {
+  width: 60%;
+  margin: auto;
+}
+
+
+body>div {
+  position: fixed;
+  inset: 0;
+  background-color: transparent;
+  z-index: 29;
+  display: none;
+}
+
+body>div.Open {
+  display: block;
 }
