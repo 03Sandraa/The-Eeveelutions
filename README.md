@@ -151,7 +151,6 @@ De pagina is niet te besturen door toetsenbord.
   #### oplossing:
   Ik heb een nieuwe animatie gemaakt voor het evolueren, waardoor de ervaring één geheel wordt.
 
-
   ### Bevinding 3:
   Ik moet meer bronnen gaan toevoegen. Op dit moment had ik nog niet veel bronnen verwerkt.
   
@@ -171,19 +170,19 @@ De pagina is niet te besturen door toetsenbord.
   <summary>(Dag 9) Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
+  
+  
+<img width="375px" alt="final ontwerp" src="https://user-images.githubusercontent.com/90039351/201097879-26bbb71d-1df8-43d1-a5f0-f507ed5f0870.png">
+<img width="375px" alt="Schermafbeelding 2022-11-10 om 14 02 45" src="https://user-images.githubusercontent.com/90039351/201098792-7c6ffa2e-f388-4097-94ca-6af6ea131e57.png">
+<img width="375px" alt="Schermafbeelding 2022-11-10 om 14 03 23" src="https://user-images.githubusercontent.com/90039351/201098805-2da71ee8-3024-421e-978d-6310d29f2706.png">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+Ik heb me verder ontwikkeld in CSS. Zo heb ik me verdiept in het transformeren van onderdelen in een svg en elementen op een tegenstrijdige manier laten bewegen, zo draaien de stenen en om hun as en om Eevee heen. Ook heb ik een klein gedeelte gelezen over hoe SVG's schalen. Ook heb ik mezelf tot het uitterste gepusht om het idee wat ik voor ogen had te kunnen verwerkelijke. 
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+Ik heb al mijn tijd gestoken in het coderen en het doen dat dingen zoals de readme en de schetsen wat werden weggedrukt. Vooral toen ik de tijdsdruk begon te voelen, heb ik de volle focussen op het coderen gelegd. Hierdoor ben ik wel vergekomen, maar zag ik het halverwege niet meer zo zitten. Al hoewel ik erg trots ben op het eindresultaat heb ik alsnog een lijstje met dingen die ik het liefst ook nog toe had willen voegen. Zoals een SVG animatie op een ander soort manier dan dat ik nu heb.
 </details>
 
 
